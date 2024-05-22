@@ -342,5 +342,5 @@ h2 {
     border-radius: 21px;
     width: 335px;
     height: 350px;
-    background: linear-gradient(180deg, rgba(31, 98, 60, 0) 0%, #1f623c 100%), url("");
+    background: linear-gradient(180deg, rgba(31, 98, 60, 0) 0%, #1f623c 100%);
 }
