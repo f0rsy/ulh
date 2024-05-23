@@ -349,6 +349,11 @@ h3 {
     flex-direction: row;
 }
 
+.productsHeader p {
+    width: 897px;
+    font-family: MontserratBold;
+}
+
 .productCard {
     position: relative;
     width: 335px; 
@@ -431,10 +436,32 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .moreDetails {
     color: var(--green);
     text-decoration: none;
     font-size: 20px;
+}
+
+.footer {
+    height: 355px; /* Указываем фиксированную высоту */
+  }
+  
+  .footer img {
+    margin-bottom: 15px; /* Отступ для логотипа */
+  }
+  
+  .footer p {
+    margin-bottom: 5px; /* Меньший отступ для параграфов */
+  }
+  
+@media (max-width: 992px) {
+    .productsHeader p {
+        display: none;
+    }
+    h2 {
+        font-size: 24px;
+    }
 }
