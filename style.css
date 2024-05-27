@@ -27,6 +27,10 @@ body {
     font-family: MontserratReg;
 }
 
+a {
+    text-decoration: none;
+}
+
 .navbar-brand {
     width: 350px;
     height: 80px;
@@ -439,24 +443,50 @@ h3 {
     justify-content: center;
 }
 
-.moreDetails {
+.moreDetails, .moreDetails svg {
     color: var(--green);
+    stroke: var(--green);
+    fill: var(--green);
     text-decoration: none;
     font-size: 20px;
+    transition: 300ms;
 }
+
+svg path {
+    fill:inherit;
+    stroke:inherit;
+    stroke-width:inherit;
+}
+
+.moreDetails:hover, .moreDetails:hover svg {
+    color: var(--yellow);
+    stroke: var(--yellow);
+    fill: var(--yellow);
+}
+
 
 .footer {
     height: 355px; /* Указываем фиксированную высоту */
   }
   
-  .footer img {
+ .footer img {
     margin-bottom: 15px; /* Отступ для логотипа */
   }
   
-  .footer p {
+.footer p {
     margin-bottom: 5px; /* Меньший отступ для параграфов */
   }
-  
+
+.adress {
+    color: #fff;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.adress:hover {
+    color: var(--yellow);
+}
+
 @media (max-width: 992px) {
     .productsHeader p {
         display: none;
