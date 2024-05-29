@@ -37,12 +37,13 @@ a {
 }
 
 .modal-content {
-    background-color: var(--green); 
-    color: white; 
+    background-color: var(--green);
+    color: white;
 }
 
 .nav-link {
-    margin-bottom: 5px; /* Отступ между ссылками */
+    margin-bottom: 5px;
+    /* Отступ между ссылками */
     font-family: MontserratSemiBold;
     font-size: 30px;
     transition: 300ms;
@@ -53,9 +54,10 @@ a {
     color: #fff;
 }
 
-.modal-header, .modal-footer {
-    border: none; 
-    background-color: var(--green); 
+.modal-header,
+.modal-footer {
+    border: none;
+    background-color: var(--green);
 }
 
 .modal-header img {
@@ -76,7 +78,7 @@ a {
 }
 
 .btn-close {
-    color: white; 
+    color: white;
 }
 
 .menu-button {
@@ -89,30 +91,38 @@ a {
 }
 
 .menu-text {
-    margin-right: 10px; 
+    margin-right: 10px;
     font-family: MontserratBold;
     font-size: 20px;
 }
 
 .menu-icon span {
     display: block;
-    width: 25px; /* Ширина каждой линии */
-    height: 3px; /* Высота каждой линии */
-    background-color: black; /* Цвет линий */
-    margin: 2px 0; /* Расстояние между линиями */
+    width: 25px;
+    /* Ширина каждой линии */
+    height: 3px;
+    /* Высота каждой линии */
+    background-color: black;
+    /* Цвет линий */
+    margin: 2px 0;
+    /* Расстояние между линиями */
 }
 
 .menu-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 24px; /* Общая высота иконки гамбургера */
+    height: 24px;
 }
- 
+
 .dropdown button {
     font-family: MontserratBold;
-    font-size: 20px; 
-    background-color: rgb(255, 255, 255, 0.4);
+    font-size: 20px;
+}
+
+.butn {
+    width: 30px;
+    background-color: none;
 }
 
 .dropdown-menu {
@@ -122,30 +132,34 @@ a {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 80px; 
-    padding: 0.5rem 0; 
-    margin: 0.125rem 0 0; 
+    min-width: 80px;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
     font-family: MontserratBold;
-    font-size: 20px; 
+    font-size: 20px;
     background-color: rgba(255, 255, 255, 0.6);
     background-clip: padding-box;
-    border: none; 
+    border: none;
     border-radius: 0.25rem;
 }
-  
+
 .dropdown-toggle {
     background-color: transparent;
-    color: black; 
-    border: none; 
-    box-shadow: none; 
-  }
+    color: black;
+    border: none;
+    box-shadow: none;
+}
 
-.dropdown-toggle:focus, .dropdown-toggle:hover, .dropdown-toggle:active {
-    background-color: transparent; /* Прозрачный фон при наведении, фокусе или активации */
-    box-shadow: none; /* Убрать тень при наведении, фокусе или активации */
+.dropdown-toggle:focus,
+.dropdown-toggle:hover,
+.dropdown-toggle:active {
+    background-color: transparent;
+    /* Прозрачный фон при наведении, фокусе или активации */
+    box-shadow: none;
+    /* Убрать тень при наведении, фокусе или активации */
     color: black;
 }
-  
+
 .dropdown-item {
     display: block;
     width: 100%;
@@ -153,58 +167,64 @@ a {
     clear: both;
     font-weight: 400;
     color: black;
-    text-align: center; 
+    text-align: center;
     white-space: nowrap;
-    background-color: transparent; 
+    background-color: transparent;
     border: 0;
     background-color: rgb(255, 255, 255, 0.4);
-    transition: background-color 0.5s ease; 
-  }
-  
+    transition: background-color 0.5s ease;
+}
+
 .dropdown-item:hover {
     color: var(--yellow);
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block; 
-  }
+}
 
-  .video-container {
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.video-container {
     position: relative;
-    width: 100%; /* Ширина контейнера */
-    height: 900px; /* Высота контейнера */
+    width: 100%;
+    /* Ширина контейнера */
+    height: 900px;
+    /* Высота контейнера */
     overflow: hidden;
-  }
-  
-  .background-video {
+}
+
+.background-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Обеспечивает покрытие всего контейнера */
+    object-fit: cover;
+    /* Обеспечивает покрытие всего контейнера */
     position: absolute;
     top: 0;
     left: 0;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон для текста */
+    background: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный черный фон для текста */
     display: flex;
-    align-items: center; /* Центрирование текста по вертикали */
-    justify-content: center; /* Центрирование текста по горизонтали */
-  }
-  
-  .text {
+    align-items: center;
+    /* Центрирование текста по вертикали */
+    justify-content: center;
+    /* Центрирование текста по горизонтали */
+}
+
+.text {
     font-family: MontserratBold;
     color: white;
     font-size: 60px;
     padding: 15px;
     max-width: 1300px;
-  }
-  
+}
+
 
 @media (max-width: 992px) {
     .modal-header img {
@@ -236,43 +256,45 @@ a {
     /* width: 442px; */
     height: 167px;
     overflow: hidden;
-    background-color: #ffffff; /* Задний фон для удобства */
+    background-color: #ffffff;
+    /* Задний фон для удобства */
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     margin-top: 20px;
 }
 
 .icon {
     position: absolute;
-    left: 33px; 
-    bottom: 18px; 
-    transition: left 0.5s ease; 
-    height: 65px; 
-    width: auto; 
+    left: 33px;
+    bottom: 18px;
+    transition: left 0.5s ease;
+    height: 65px;
+    width: auto;
     z-index: 1000;
 }
 
 .iconLong {
     position: absolute;
-    left: 33px; 
-    bottom: 18px; 
-    transition: left 0.5s ease; 
-    height: 65px; 
-    width: auto; 
+    left: 33px;
+    bottom: 18px;
+    transition: left 0.5s ease;
+    height: 65px;
+    width: auto;
     z-index: 1000;
 }
 
 .card:hover .icon {
-    left: 330px; /* Конечное положение иконки справа */
+    left: 330px;
+    /* Конечное положение иконки справа */
 }
 
 .card:hover .iconLong {
-    left: 230px; /* Конечное положение иконки справа */
+    left: 230px;
+    /* Конечное положение иконки справа */
 }
 
 .card-state {
     position: absolute;
-    /* width: 100%; */
     height: 100%;
     transition: opacity 0.3s ease;
     display: flex;
@@ -282,11 +304,13 @@ a {
 }
 
 .card-state-1 {
-    flex-grow: 1; /* Растягиваем на всю ширину кроме иконки */
+    flex-grow: 1;
+    /* Растягиваем на всю ширину кроме иконки */
     margin-top: -45px;
     margin-right: 20px;
     margin-left: 175px;
-    background-color: #ffffff; /* Фон первого состояния */
+    background-color: #ffffff;
+    /* Фон первого состояния */
     color: var(--green);
     opacity: 1;
     justify-content: flex-start;
@@ -302,10 +326,10 @@ a {
     color: white;
     opacity: 0;
     display: flex;
-    align-items: flex-start; /* Выравниваем содержимое к верху */
-    justify-content: center; /* Центрирование текста */
+    align-items: flex-start;
+    justify-content: center;
     padding-top: 20px;
-    padding-left: 20px; /* Добавляем отступ сверху для дополнительного поднятия текста */
+    padding-left: 20px;
     transition: opacity 0.3s ease;
 }
 
@@ -360,18 +384,18 @@ h3 {
 
 .productCard {
     position: relative;
-    width: 335px; 
-    height: 350px; 
-    border-radius: 21px; 
+    width: 335px;
+    height: 350px;
+    border-radius: 21px;
     overflow: hidden;
-    background: var(--green); 
-    color: white; 
+    background: var(--green);
+    color: white;
     margin: 7px;
-    transition: opacity 0.5s ease; 
+    transition: opacity 0.5s ease;
 
 }
 
- .productCard .state-2 {
+.productCard .state-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -403,8 +427,8 @@ h3 {
 
 .productCard img {
     position: absolute;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: 1;
 }
@@ -443,7 +467,8 @@ h3 {
     justify-content: center;
 }
 
-.moreDetails, .moreDetails svg {
+.moreDetails,
+.moreDetails svg {
     color: var(--green);
     stroke: var(--green);
     fill: var(--green);
@@ -453,12 +478,13 @@ h3 {
 }
 
 svg path {
-    fill:inherit;
-    stroke:inherit;
-    stroke-width:inherit;
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit;
 }
 
-.moreDetails:hover, .moreDetails:hover svg {
+.moreDetails:hover,
+.moreDetails:hover svg {
     color: var(--yellow);
     stroke: var(--yellow);
     fill: var(--yellow);
@@ -466,16 +492,19 @@ svg path {
 
 
 .footer {
-    height: 355px; /* Указываем фиксированную высоту */
-  }
-  
- .footer img {
-    margin-bottom: 15px; /* Отступ для логотипа */
-  }
-  
+    height: 355px;
+    /* Указываем фиксированную высоту */
+}
+
+.footer img {
+    margin-bottom: 15px;
+    /* Отступ для логотипа */
+}
+
 .footer p {
-    margin-bottom: 5px; /* Меньший отступ для параграфов */
-  }
+    margin-bottom: 5px;
+    /* Меньший отступ для параграфов */
+}
 
 .adress {
     color: #fff;
@@ -488,10 +517,69 @@ svg path {
 }
 
 @media (max-width: 992px) {
+
+    .navbar-brand img {
+        height: 60px;
+        width: 200px;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .productsHeader p {
         display: none;
     }
+
     h2 {
         font-size: 24px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+    
+    .moreDetails {
+        font-size: 15px;
+    }
+
+    .icon {
+        position: absolute;
+        left: 33px;
+        bottom: 18px;
+        transition: left 0.5s ease;
+        height: 65px;
+        width: auto;
+        z-index: 1000;
+    }
+
+    .iconLong {
+        position: absolute;
+        left: 33px;
+        bottom: 18px;
+        transition: left 0.5s ease;
+        height: 65px;
+        width: auto;
+        z-index: 1000;
+    }
+
+    .card:hover .icon {
+        left: 300px;
+        /* Конечное положение иконки справа */
+    }
+
+    .card:hover .iconLong {
+        left: 180px;
+        /* Конечное положение иконки справа */
+    }
+
+    .card-state-1 {
+        font-size: 12px;
+    }
+
+    .card-state-2 {
+        font-size: 14px;
     }
 }
