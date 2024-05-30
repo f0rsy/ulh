@@ -225,6 +225,18 @@ a {
     max-width: 1300px;
 }
 
+.txt-default {
+    display: block;
+}
+
+.txt {
+    display: none;
+}
+
+.detailed {
+    display: flex;
+    align-items: center;
+}
 
 @media (max-width: 992px) {
     .modal-header img {
@@ -368,6 +380,11 @@ h3 {
 
 .kraevText {
     font-size: 20px;
+}
+
+.products {
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 
 .productsHeader {
@@ -527,6 +544,14 @@ svg path {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .txt-default {
+        display: none;
+    }
+    
+    .txt {
+        display: block;
     }
 
     .productsHeader p {
