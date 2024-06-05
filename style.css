@@ -1,8 +1,42 @@
-/* main style */
+@font-face {
+    font-family: MontserratReg;
+    src: url(media/fonts/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+    font-family: MontserratMedium;
+    src: url(media/fonts/MontserratAlternates-Medium.ttf);
+}
+
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(media/fonts/MontserratAlternates-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(media/fonts/MontserratAlternates-Bold.ttf);
+}
+
+:root {
+    --green: #1F623C;
+    --yellow: #FFBB00;
+}
 
 html {
     width: 1920px;
     height: 1080px;
+}
+
+body {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+}
+
+main { 
+    flex: 1 1 auto;
 }
 
 .header {
@@ -15,7 +49,7 @@ html {
 }
 
 .H4 {
-    color: #1F623C;
+    color: var(--green);
     font-family: "Montserrat Alternates";
     font-size: 15px;
     font-style: normal;
@@ -137,28 +171,6 @@ html {
     margin-top: 15rem;
 }
 
-/* eco style */
-
-body {
-    width: 1920px;
-    height: 1080px;
-    display: flex;
-    flex-direction: column;
-}
-
-main { 
-    flex: 1 1 auto;
-}
-
-.H1{
-    color: #000;
-    font-family: "Montserrat Alternates";
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
 .row {
     --bs-gutter-x: 9rem;
 }
@@ -193,4 +205,67 @@ main {
     line-height: normal;
     text-align: left;
     margin-left: 12%;
+}
+
+.card1 {
+    border-radius: 20px;
+    border: 2px solid var(--green);
+    width: 310px;
+    height: 470px;
+    flex-shrink: 0;
+}
+
+.text_card1 {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.text2_card1 {
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.button {
+    border-radius: 24px;
+    background: var(--yellow);
+    display: inline-flex;
+    padding: 0.5px 35px 0.5px 35px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.text_button {
+    margin-top: 10px;
+}
+
+.card_img {
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.card2 {
+    border-radius: 20px;
+    border: 2px solid var(--green);
+    width: 310px;
+    height: 470px;
+    flex-shrink: 0;
+}
+
+.text2_card2 {
+    
 }
