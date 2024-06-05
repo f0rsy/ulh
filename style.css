@@ -186,18 +186,14 @@ a {
 .photo-container {
     position: relative;
     width: 100%;
-    /* Ширина контейнера */
-    height: 900px;
-    /* Высота контейнера */
+    height: 435px;
     overflow: hidden;
 }
 
 .video-container {
     position: relative;
     width: 100%;
-    /* Ширина контейнера */
     height: 900px;
-    /* Высота контейнера */
     overflow: hidden;
 }
 
@@ -218,19 +214,44 @@ a {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    /* Полупрозрачный черный фон для текста */
     display: flex;
-    align-items: center;
-    /* Центрирование текста по вертикали */
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    /* Центрирование текста по горизонтали */
+    align-content: center;
 }
 
 .text {
     font-family: MontserratBold;
     color: white;
     font-size: 60px;
-    padding: 15px;
+    max-width: 1300px;
+}
+
+.overlayUnits {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.textUnits {
+    font-family: MontserratBold;
+    color: white;
+    font-size: 55px;
+    max-width: 1300px;
+}
+
+.textUnitsSmall {
+    font-family: MontserratSemiBold;
+    color: white;
+    font-size: 36px;
     max-width: 1300px;
 }
 
@@ -594,6 +615,19 @@ u {
     font-size: 28px;
 }
 
+.info {
+    margin-top: 50px;
+}
+
+.sostav {
+    font-size: 28px;
+}
+
+.unitImg {
+    width: 500px;
+    height: 500px;
+}
+
 @media (max-width: 992px) {
 
     .navbar-brand img {
@@ -667,5 +701,25 @@ u {
 
     .card-state-2 {
         font-size: 14px;
+    }
+
+    .textUnits {
+        font-size: 30px;
+    }
+
+    .textUnitsSmall {
+        font-size: 20px;
+    }
+
+    .sostav {
+        font-size: 16px;
+    }
+
+    u {
+        font-size: 16px;
+    }
+
+    .unitImg {
+        display: none;
     }
 }
