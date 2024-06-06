@@ -266,6 +266,72 @@ main {
     flex-shrink: 0;
 }
 
-.text2_card2 {
-    
+
+/* Main activity style mobile */
+
+@media (max-width: 992px) {
+
+    .navbar-brand img {
+        height: 60px;
+        width: 200px;
+    }
+
+    .H1 {
+        color: #000;
+        /* заголовки */
+        font-family: "Montserrat Alternates";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .H2 {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .text {
+        color: #000;
+        font-family: "Montserrat Alternates";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .plita {
+        color: #000;
+        text-align: center;
+        font-family: "Montserrat Alternates";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .pila {
+        color: #000;
+        text-align: center;
+        font-family: "Montserrat Alternates";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .brus {
+        color: #000;
+        text-align: center;
+        font-family: "Montserrat Alternates";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
+
