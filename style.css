@@ -628,6 +628,77 @@ u {
     height: 500px;
 }
 
+
+
+
+
+
+/* для карты */
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+  }
+  
+  .contactCard {
+    position: absolute;
+    top: 0px;
+    width: 33.75rem;
+    height: 20rem;
+    padding-left: 60px;
+    color: #fff;
+    background-color: #488873;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+  }
+  
+  .mapCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .place {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .place p {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .phone {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .phone p {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+/* окончание карты */
+
+
+
+
+
+
+
 @media (max-width: 992px) {
 
     .navbar-brand img {
