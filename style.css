@@ -637,25 +637,56 @@ u {
 .wrapper {
     position: relative;
     width: 100%;
-    height: 320px;
+    height: 400px;
     overflow: hidden;
+    margin-bottom: 30px;
   }
-  
+
+  .wrapperBig {
+    position: relative;
+    width: 100%;
+    height: 730px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
   .contactCard {
     position: absolute;
-    top: 0px;
-    width: 33.75rem;
-    height: 20rem;
-    padding-left: 60px;
-    color: #fff;
-    background-color: #488873;
-    border-radius: 40px;
+    top: 0;
+    width: 645px;
+    height: 400px;
+    padding-left: 30px;
+    border-radius: 40px 0 0 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     z-index: 2;
   }
+
+  .contactCardBig {
+    position: absolute;
+    top: 0;
+    width: 645px;
+    height: 730px;
+    padding-left: 30px;
+    border-radius: 40px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+  }
+  
+  .contactCardYel {
+    background-color: var(--yellow);
+  }
+
+  .contactCardGre {
+    padding-top: 15px;
+    color: #fff;
+    background-color: var(--green);
+}
   
   .mapCard {
     position: relative;
@@ -664,32 +695,29 @@ u {
     z-index: 1;
   }
   
-  .place {
+  .location, .phone, .email  {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-bottom: 15px;
+    flex-direction: column;
+    margin-bottom: 10px;
   }
   
-  .place p {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 24px;
-    font-weight: 600;
+  .location p, .phone p, .email p {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 30px;
+    font-family: MontserratMedium;
+    line-height: 1.1;
   }
-  
-  .phone {
+
+  .locationName, .phoneName, .emailName {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 15px;
   }
-  
-  .phone p {
-    margin: 0;
-    padding-left: 20px;
+
+  .locationInfo, .phoneInfo, .emailInfo {
+    margin-left: 50px;
     font-size: 24px;
-    font-weight: 600;
   }
 /* окончание карты */
 
