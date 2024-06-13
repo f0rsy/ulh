@@ -762,7 +762,60 @@ u {
 
 /* окончание карты */
 
+.blockYe {
+    width: 15px;
+    height: 50px;
+    background-color: var(--yellow);
+}
 
+.colorTextYe {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 350px;
+}
+
+.colorTextYe p {
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-family: MontserratBold;
+    font-size: 40px;
+    color: var(--yellow);
+}
+
+.blockGr {
+    width: 15px;
+    height: 50px;
+    background-color: var(--green);
+} 
+
+.colorTextGr {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.colorTextGr p {
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-family: MontserratBold;
+    font-size: 40px;
+    color: var(--green);
+}
+
+.backButton {
+    height: 40px;
+    width: 250px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    background: none;
+    transition: 3ms;
+}
+
+.backButton:hover {
+    background-color: #fff;
+}
 
 
 
