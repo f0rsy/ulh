@@ -570,14 +570,17 @@ svg path {
     justify-content: center;
 }
 
-.unitCard-1, .unitCard-2, .unitCard-3, .unitCard-4 {
+.unitCard-1,
+.unitCard-2,
+.unitCard-3,
+.unitCard-4 {
     max-width: 340px;
     height: 450px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     border-radius: 20px;
-    padding: 5px; 
+    padding: 5px;
     width: 100%;
     margin-right: 5px;
     margin-top: 10px;
@@ -604,9 +607,12 @@ svg path {
     background-size: cover;
 }
 
-.unitCard-1 p, .unitCard-2 p, .unitCard-3 p, .unitCard-4 p {
-    color: white; 
-    font-size: 26px; 
+.unitCard-1 p,
+.unitCard-2 p,
+.unitCard-3 p,
+.unitCard-4 p {
+    color: white;
+    font-size: 26px;
     font-family: MontserratBold;
     text-align: center;
 }
@@ -640,25 +646,25 @@ u {
     height: 400px;
     overflow: hidden;
     margin-bottom: 30px;
-  }
+}
 
-  .wrapperBig {
+.wrapperBig {
     position: relative;
     width: 100%;
     height: 760px;
     overflow: hidden;
     margin-bottom: 30px;
-  }
+}
 
-  .wrapperSmall {
+.wrapperSmall {
     position: relative;
     width: 100%;
     height: 200px;
     overflow: hidden;
     margin-bottom: 30px;
-  }
+}
 
-  .contactCard {
+.contactCard {
     position: absolute;
     top: 0;
     width: 645px;
@@ -670,9 +676,9 @@ u {
     justify-content: center;
     align-items: flex-start;
     z-index: 2;
-  }
+}
 
-  .contactCardBig {
+.contactCardBig {
     position: absolute;
     top: 0;
     width: 645px;
@@ -684,9 +690,9 @@ u {
     justify-content: center;
     align-items: flex-start;
     z-index: 2;
-  }
+}
 
-  .contactCardSmall {
+.contactCardSmall {
     position: absolute;
     top: 0;
     width: 645px;
@@ -698,49 +704,62 @@ u {
     justify-content: center;
     align-items: flex-start;
     z-index: 2;
-  }
-  
-  .contactCardYel {
-    background-color: var(--yellow);
-  }
+}
 
-  .contactCardGre {
+.contactCardYel {
+    background-color: var(--yellow);
+}
+
+.contactCardGre {
     padding-top: 15px;
     color: #fff;
     background-color: var(--green);
 }
-  
-  .mapCard {
+
+.mapCard {
     position: relative;
     width: 100%;
     height: 100%;
     z-index: 1;
-  }
-  
-  .location, .phone, .email, .fax  {
+}
+
+.location,
+.phone,
+.email,
+.fax {
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-  }
-  
-  .location p, .phone p, .email p, .fax p {
+}
+
+.location p,
+.phone p,
+.email p,
+.fax p {
     margin-bottom: 5px;
     padding-left: 15px;
     font-size: 30px;
     font-family: MontserratMedium;
     line-height: 1.1;
-  }
+}
 
-  .locationName, .phoneName, .emailName, .faxName {
+.locationName,
+.phoneName,
+.emailName,
+.faxName {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
+}
 
-  .locationInfo, .phoneInfo, .emailInfo, .faxInfo {
+.locationInfo,
+.phoneInfo,
+.emailInfo,
+.faxInfo {
     margin-left: 50px;
     font-size: 24px;
-  }
+}
+
 /* окончание карты */
 
 
@@ -765,7 +784,7 @@ u {
     .txt-default {
         display: none;
     }
-    
+
     .txt {
         display: block;
     }
@@ -781,7 +800,7 @@ u {
     .text {
         font-size: 30px;
     }
-    
+
     .moreDetails {
         font-size: 15px;
     }
@@ -841,6 +860,64 @@ u {
     }
 
     .unitImg {
+        display: none;
+    }
+
+    .location p,
+    .phone p,
+    .email p,
+    .fax p {
+        margin-bottom: 5px;
+        padding-left: 15px;
+        font-size: 15px;
+        font-family: MontserratMedium;
+        line-height: 1.1;
+    }
+
+    .locationInfo,
+    .phoneInfo,
+    .emailInfo,
+    .faxInfo {
+        margin-left: 35px;
+        font-size: 12px;
+    }
+
+    .locationName img,
+    .phoneName img,
+    .emailName img,
+    .faxName img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contactCard {
+        width: 385px;
+        height: 230px;
+    }
+
+    .contactCardBig {
+        width: 385px;
+        height: 400px;
+    }
+
+    .contactCardSmall {
+        width: 385px;
+        height: 130px;
+    }
+
+    .wrapper {
+        height: 230px;
+    }
+
+    .wrapperBig {
+        height: 400px;
+    }
+
+    .wrapperSmall {
+        height: 130px;
+    }
+
+    .mapCard {
         display: none;
     }
 }
