@@ -387,6 +387,13 @@ a {
     transition: opacity 0.3s ease;
 }
 
+.state-2 a {
+    color: #fff;
+}
+
+.state-2 a:hover {
+    color: var(--green);
+}
 
 .card:hover .card-state-2 {
     opacity: 1;
@@ -419,6 +426,11 @@ h2 {
 h3 {
     font-family: MontserratBold;
     font-size: 35px;
+}
+
+h4 {
+    font-family: MontserratBold;
+    font-size: 26px;
 }
 
 .kraevText {
@@ -947,6 +959,16 @@ u {
     border-right: none;
 }
 
+.education p, li {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.educationCenter {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
 
 @media (max-width: 992px) {
 
