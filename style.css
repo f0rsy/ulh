@@ -240,15 +240,18 @@ body {
 .modal-lg {
     max-width: 2121px;
 }
+
 .modal-content {
     height: 905px;
 }
+
 .modal-body {
     display: flex;
     align-items: flex-start;
     height: 100%;
     padding: 0px;
 }
+
 .image-container {
     width: 800px;
     height: 903px;
@@ -263,11 +266,13 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
 .text-container {
     flex: 1;
     padding: 20px;
     gap: 50px;
 }
+
 .text-container p {
     margin-top: 0; /* Убираем отступ сверху */
 }
@@ -287,6 +292,7 @@ body {
     border: 2px solid var(--green);
     width: 250px;
     height: 40px;
+    transition: 300ms;
 
     color: var(--green);
     font-family: "Montserrat Alternates";
@@ -295,4 +301,155 @@ body {
     font-weight: 400;
     line-height: normal;
     background-color: inherit;
+}
+.button_close:hover {
+    border: 2px solid var(--yellow);
+}
+
+.modal-lg {
+    max-width: 1800px;
+}
+.modal-content {
+    height: 902px;
+    border: none;
+}
+.modal-body {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+.text-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.text-container h5 {
+    font-size: 36px;
+}
+.text-container p {
+    margin-top: 0;
+    opacity: 0.7;
+}
+.text-container ul {
+    margin-top: 0;
+    padding-left: 20px;
+    list-style-type: none;
+}
+.text-container ul li {
+    margin-bottom: 50px;
+}
+.text-container ul li:last-child {
+    margin-bottom: 0;
+}
+.text-container ul li span {
+    opacity: 0.7;
+}
+.awards-list li {
+    position: relative;
+    padding-left: 25px; /* Отступ для треугольника */
+}
+.awards-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 0;
+    height: 0;
+    border-left: 10px solid var(--green); /* Зеленый треугольник */
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.H1_news {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px; /* 93.75% */
+    margin: 0px;
+    width: 800px;
+    height: 100px;
+}
+
+.custom-card {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #28a745;
+    border-radius: 20px;
+    padding: 0;
+    overflow: hidden;
+    width: 1375px; /* Увеличенная ширина для основной новости */
+    height: 370px; /* Установка высоты для основной новости */
+    margin-bottom: 20px;
+}
+
+.custom-card img {
+    width: 373px;
+    height: 370px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-card-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.custom-card-title {
+    font-size: 1.5rem; /* Увеличенный размер шрифта заголовка */
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.custom-card-text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.custom-card-footer a {
+    color: var(--green);
+    text-decoration: none;
+    transition: 300ms;
+}
+.custom-card-footer a:hover {
+    color: var(--yellow);
+}
+
+.row-card {
+    display: flex;
+    justify-content: space-between;
+}
+.small-card {
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 345px;
+    height: 400px; /* Установка высоты 450px */
+    margin: 10px;
+    flex-grow: 1;
+}
+.small-card img {
+    width: 345px;
+    height: 273px; /* Установка высоты изображения внутри карточки */
+    object-fit: cover;
+}
+.small-card-content {
+    padding: 10px;
+}
+.small-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+.small-card-footer {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666;
 }
