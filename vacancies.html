@@ -109,7 +109,10 @@
             <h4>По всем интересующим вопросам обращаться по адресу:</h4>
             <div class="wrapper">
                 <div class="mapCard">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A73566d321d96543ce9ce74872e311f28459eb83128066620ac718dac171940f1&amp;source=constructor"  width="100%" height="400px" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 40px;"></iframe>
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A73566d321d96543ce9ce74872e311f28459eb83128066620ac718dac171940f1&amp;source=constructor"
+                        width="100%" height="400px" frameborder="1" allowfullscreen="true"
+                        style="position:relative; border-radius: 40px;"></iframe>
                 </div>
                 <div class="contactCard contactCardYel">
                     <div class="location">
@@ -137,9 +140,15 @@
                 </div>
             </div>
             <h4>Или заполните ниже форму обратной связи</h4>
-            <button>Заполнить</button>
+            <!-- Кнопка для открытия модального окна -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#formModal">
+                Открыть форму
+            </button>
+            <div class="modal-dialog modal-dialog-centered" type="button" class="btn btn-primary" data-bs-toggle="modal" id="formModal">
+                
+            </div>
         </div>
-       
+
     </main>
     <footer class="footer bg-dark text-white py-4">
         <div class="container">
@@ -161,6 +170,20 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>

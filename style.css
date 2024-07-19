@@ -933,8 +933,6 @@ u {
     outline: none;
 }
 
-
-
 .custom-table tbody th,
 .custom-table tbody td {
     border-color: var(--green);
