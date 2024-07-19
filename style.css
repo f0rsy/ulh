@@ -1133,3 +1133,8 @@ u {
         background-size: 25px 15px;
     }
 }
+
+.modal-dialog {
+    width: 800px;
+    height: 800px;
+}
