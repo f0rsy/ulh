@@ -952,12 +952,14 @@ u {
     border-bottom: 2px solid #343a40;
 }
 
-.custom-table th, .custom-table td {
+.custom-table th,
+.custom-table td {
     border-left: none;
     border-right: none;
 }
 
-.education p, li {
+.education p,
+li {
     margin-top: 20px;
     font-size: 20px;
 }
@@ -966,6 +968,50 @@ u {
     display: flex;
     text-align: center;
     flex-direction: column;
+}
+
+.openButton {
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    color: var(--green);
+    background-color: #fff;
+    width: 300px;
+    height: 50px;
+    transition: 300ms;
+}
+
+.openButton:hover {
+    background-color: var(--yellow);
+    border: none;
+}
+
+.anket {
+    background-color: #fff;
+    color: #333333;
+    border-radius: 30px;
+}
+
+.custom-modal {
+    max-width: 1200px; /* Ширина модального окна */
+    height: 845px; /* Высота модального окна */
+}
+
+.custom-modal .modal-content {
+    height: 100%; /* Устанавливаем высоту контента на 100%, чтобы наследовать высоту контейнера */
+}
+
+.form-control {
+    border: none; 
+    border-bottom: 3px solid var(--green); 
+    box-shadow: none; 
+    outline: none; 
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none; 
+    outline: none; 
+    border-bottom: 3px solid var(--green); 
 }
 
 @media (max-width: 992px) {
@@ -1132,9 +1178,4 @@ u {
         font-size: 15px;
         background-size: 25px 15px;
     }
-}
-
-.modal-dialog {
-    width: 800px;
-    height: 800px;
 }
