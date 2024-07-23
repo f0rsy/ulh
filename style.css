@@ -131,17 +131,14 @@ body {
 
 .footer {
     height: 355px;
-    /* Указываем фиксированную высоту */
 }
 
 .footer img {
     margin-bottom: 15px;
-    /* Отступ для логотипа */
 }
 
 .footer p {
     margin-bottom: 5px;
-    /* Меньший отступ для параграфов */
 }
 
 .adress {
@@ -256,11 +253,11 @@ body {
     width: 800px;
     height: 903px;
 
-    background-color: #006400; /* Зелёный цвет для фона */
+    background-color: var(--green);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Отступы внутри контейнера */
+    padding: 20px;
 }
 .image-container img {
     max-width: 100%;
@@ -274,7 +271,7 @@ body {
 }
 
 .text-container p {
-    margin-top: 0; /* Убираем отступ сверху */
+    margin-top: 0;
 }
 
 .H2-card1 {
@@ -348,7 +345,7 @@ body {
 }
 .awards-list li {
     position: relative;
-    padding-left: 25px; /* Отступ для треугольника */
+    padding-left: 25px;
 }
 .awards-list li::before {
     content: "";
@@ -357,7 +354,7 @@ body {
     top: 0.5em;
     width: 0;
     height: 0;
-    border-left: 10px solid var(--green); /* Зеленый треугольник */
+    border-left: 10px solid var(--green);
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
 }
@@ -365,7 +362,7 @@ body {
 .H1_news {
     font-size: 32px;
     font-weight: 700;
-    line-height: 30px; /* 93.75% */
+    line-height: 30px;
     margin: 0px;
     width: 800px;
     height: 100px;
@@ -374,12 +371,12 @@ body {
 .custom-card {
     display: flex;
     flex-direction: row;
-    border: 2px solid #28a745;
+    border: 2px solid var(--yellow);
     border-radius: 20px;
     padding: 0;
     overflow: hidden;
-    width: 1375px; /* Увеличенная ширина для основной новости */
-    height: 370px; /* Установка высоты для основной новости */
+    width: 1375px;
+    height: 370px;
     margin-bottom: 20px;
 }
 
@@ -396,7 +393,7 @@ body {
 }
 
 .custom-card-title {
-    font-size: 1.5rem; /* Увеличенный размер шрифта заголовка */
+    font-size: 1.5rem;
     font-weight: bold;
     margin-top: 0;
 }
@@ -430,14 +427,14 @@ body {
     border: 2px solid var(--green);
     border-radius: 20px;
     overflow: hidden;
-    width: 345px;
-    height: 400px; /* Установка высоты 450px */
+    width: 300px;
+    height: 400px;
     margin: 10px;
     flex-grow: 1;
 }
 .small-card img {
-    width: 345px;
-    height: 273px; /* Установка высоты изображения внутри карточки */
+    width: 340px;
+    height: 273px;
     object-fit: cover;
 }
 .small-card-content {
@@ -452,4 +449,118 @@ body {
     text-align: right;
     font-size: 0.8rem;
     color: #666;
+}
+
+.chart-container {
+    width: 200px;
+    margin: 20px;
+}
+.chart {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    position: relative;
+    border-left: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+}
+.chart-bar {
+    width: 30%;
+    margin: 0 5px;
+    background-color: var(--green);
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    position: relative;
+}
+.chart-title {
+    text-align: center;
+    font-size: 1.2em;
+}
+.bar-70 {
+    height: 70%;
+}
+.bar-20 {
+    height: 20%;
+}
+.bar-10 {
+    height: 10%;
+}
+.percentage-label {
+    position: absolute;
+    left: -40px;
+    font-size: 0.8em;
+    color: black;
+}
+.percentage-line {
+    position: absolute;
+    left: -8px;
+    width: 8px;
+    height: 2px;
+    background-color: var(--yellow);
+}
+.percentage-70 {
+    bottom: 70%;
+}
+.percentage-20 {
+    bottom: 20%;
+}
+.percentage-10 {
+    bottom: 10%;
+}
+.label-container {
+    display: flex;
+    justify-content: space-between;
+}
+.label {
+    width: 30%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.p_news {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+strong {
+    color: var(--green);
+    font-family: "Montserrat Alternates";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.h3_news {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+    transition: 300ms;
+}
+a:hover {
+    color: var(--yellow);
 }
