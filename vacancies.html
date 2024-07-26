@@ -99,12 +99,12 @@
     </header>
     <main>
         <div class="container">
-            <h1>Вакансии</h1>
-            <p>В АО «Югорский лесопромышленный холдинг» открыта вакансия</p>
-            <select name="Выберите вакансию" id="">
-                <option value="">Выберите </option>
-                <option value="">Менеджер по прдвижению продукта</option>
-                <option value="">Машинист трелевочной машины</option>
+            <h2>Вакансии</h2>
+            <p style="font-weight: 400; font-size: 28px;">В АО «Югорский лесопромышленный холдинг» открыта вакансия</p>
+            <select class="select-vacancies" name="vacancy" id="vacancy">
+                <option value="" disabled selected>Выберите вакансию</option>
+                <option value="manager">Менеджер по продвижению продукта</option>
+                <option value="operator">Машинист трелевочной машины</option>
             </select>
             <h4>По всем интересующим вопросам обращаться по адресу:</h4>
             <div class="wrapper">
@@ -141,45 +141,41 @@
             </div>
             <h4>Или заполните ниже форму обратной связи</h4>
             <button type="button" class="openButton" data-bs-toggle="modal" data-bs-target="#formModal">
-                Открыть форму
+                Заполнить
             </button>
             
             <!-- Модальное окно -->
             <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered custom-modal">
                     <div class="modal-content anket">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="formModalLabel">Форма</h5>
+                        <div class="modal-header" style="background-color: #fff;">
+                            <h4 class="modal-title" id="formModalLabel">Анкета соискателя “АО Югорский Лесопромышленный Холдинг”</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <form action="">
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">ФИО *</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <input type="text" class="form-control" id="name" placeholder="ФИО *">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label">Мобильный телефон *</label>
-                                    <input type="tel" class="form-control" id="phone">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Мобильный телефон *">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">E-mail *</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail *">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="file" class="form-label">Прикрепите заполненный файл с резюме *</label>
-                                    <input type="file" class="form-control" id="file">
+                                    <label for="upload" class="form-label">Прикрепите заполненный файл с резюме *</label>
+                                    <input type="file" class="form-control-file" id="upload">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="extra" class="form-label">Дополнительная информация</label>
-                                    <input type="text" class="form-control" id="extra">
+                                    <input type="text" class="form-control" id="extra" placeholder="Краткая информация о Вас">
                                 </div>
-                                <div class="form-check">
+                                <div class="form-check mb-3">
                                     <input type="checkbox" class="form-check-input" id="consent">
                                     <label class="form-check-label" for="consent">Даю согласие на обработку персональных данных</label>
                                 </div>
+                                <button type="button" class="sendButton">Отправить</button>
                             </form>
-                            <button>Отправить</button>
                         </div>
                     </div>
                 </div>

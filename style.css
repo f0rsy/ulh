@@ -978,6 +978,10 @@ li {
     width: 300px;
     height: 50px;
     transition: 300ms;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 35px;
+    margin-top: 20px;
 }
 
 .openButton:hover {
@@ -992,26 +996,82 @@ li {
 }
 
 .custom-modal {
-    max-width: 1200px; /* Ширина модального окна */
-    height: 845px; /* Высота модального окна */
+    max-width: 1200px;
+    /* Ширина модального окна */
+    height: 845px;
+    /* Высота модального окна */
 }
 
 .custom-modal .modal-content {
-    height: 100%; /* Устанавливаем высоту контента на 100%, чтобы наследовать высоту контейнера */
+    height: 60%;
+    /* Устанавливаем высоту контента на 100%, чтобы наследовать высоту контейнера */
 }
 
 .form-control {
-    border: none; 
-    border-bottom: 3px solid var(--green); 
-    box-shadow: none; 
-    outline: none; 
+    border: none;
+    border-bottom: 3px solid var(--green);
+    box-shadow: none;
+    outline: none;
     border-radius: 0;
 }
 
 .form-control:focus {
-    box-shadow: none; 
-    outline: none; 
-    border-bottom: 3px solid var(--green); 
+    box-shadow: none;
+    outline: none;
+    border-bottom: 3px solid var(--green);
+}
+
+.sendButton {
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+}
+
+input::-webkit-file-upload-button {
+    position: absolute;
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    transition: 300ms ease-out;
+    cursor: pointer;
+    color: var(--green);
+}
+
+input::-webkit-file-upload-button:hover {
+    background-color: var(--yellow);
+    border: none;
+}
+
+.select-vacancies {
+    border: 2px solid var(--green);
+    border-radius: 45px;
+    width: 1000px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 88%;
+    color: var(--green);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.select-info {
+    border: 3px solid var(--green);
+    border-radius: 40px;
+    width: 600px;
+    height: 80px;
+    background: #fff;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--green);
+    margin-top: 20px;
+    margin-bottom: 300px;
+    flex-grow: 1;
+    text-align: center;
 }
 
 @media (max-width: 992px) {
