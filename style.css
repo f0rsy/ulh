@@ -431,7 +431,12 @@ body {
     height: 400px;
     margin: 10px;
     flex-grow: 1;
+    transition: 300ms;
 }
+.small-card:hover {
+    border: 2px solid var(--yellow);
+}
+
 .small-card img {
     width: 340px;
     height: 273px;
@@ -563,4 +568,93 @@ a {
 }
 a:hover {
     color: var(--yellow);
+}
+
+@media (max-width: 992px) {
+    .header {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .H1 {
+        font-size: 24px;
+        padding-top: 20px;
+    }
+
+    .text-container {
+        font-size: 18px;
+        padding-top: 15px;
+    }
+
+    .H2 {
+        font-size: 22px;
+        padding-top: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cards_eco {
+        gap: 100px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .card_1_1, .card_1_2, .card_1_3, .card_1_4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-card {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .small-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-container {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .H1_news {
+        font-size: 24px;
+        width: 100%;
+        height: auto;
+    }
+
+    .small-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .row-card {
+        flex-direction: column;
+        align-items: center;
+    }
 }
