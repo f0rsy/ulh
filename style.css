@@ -657,4 +657,132 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
+
+    .zcp_text {
+        font-size: 20px;
+        width: 100%;
+        padding-top: 20px;
+        text-align: center; /* Текст будет по центру */
+    }
+
+    .H2_eco {
+        font-size: 22px;
+    }
+
+    .cards_eco {
+        gap: 20px;
+        padding-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_header {
+        align-items: center; /* Центровка изображений */
+        text-align: center; /* Центровка текста */
+    }
+    
+    .card_header img {
+        margin-bottom: 10px; /* Отступ между изображением и текстом */
+        max-width: 100%; /* Изображение не будет выходить за рамки контейнера */
+        height: auto; /* Сохраняем пропорции изображения */
+    }
+
+    .cards_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .cards_2-3 {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_1_1,
+    .card_1_2,
+    .card_1_3,
+    .card_1_4 {
+        width: 100%; /* Карточки занимают 100% ширины родительского контейнера */
+        max-width: 400px; /* Максимальная ширина карточки */
+        height: 250px; /* Фиксированная высота для всех карточек */
+        margin: 20px 0; /* Отступы сверху и снизу по 20px */
+        border-radius: 20px; /* Радиус скругления */
+        display: flex; /* Используем flex для выравнивания содержимого */
+        justify-content: center; /* Центрируем содержимое по горизонтали */
+        align-items: center; /* Центрируем содержимое по вертикали */
+        text-align: center; /* Центрируем текст */
+        padding: 20px; /* Внутренние отступы */
+        box-sizing: border-box; /* Учитываем padding в ширину и высоту */
+    }
+
+    .modal-lg {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        height: auto;
+        padding: 20px;
+    }
+
+    .modal-body {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .text-container {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .H2-card1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .button_close {
+        width: 100%;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .text-container h5 {
+        font-size: 28px;
+    }
+
+    .text-container ul li {
+        margin-bottom: 30px;
+    }
+
+    .footer {
+        height: auto; /* Автоматическая высота для адаптации под содержимое */
+        padding: 20px; /* Добавляем отступы для мобильных устройств */
+        text-align: center; /* Центрируем содержимое футера */
+    }
+
+    .footer img {
+        width: 80%; /* Уменьшаем размер изображений до 80% ширины контейнера */
+        max-width: 200px; /* Максимальная ширина изображения */
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        margin-bottom: 10px; /* Увеличиваем отступы между абзацами для лучшей читаемости */
+    }
+
+    .adress {
+        display: block; /* Адреса будут выстроены вертикально */
+        margin-bottom: 10px; /* Добавляем отступы между адресами */
+        font-size: 16px; /* Увеличиваем размер шрифта для лучшей читаемости */
+    }
+
 }
