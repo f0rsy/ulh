@@ -1059,6 +1059,21 @@ input::-webkit-file-upload-button:hover {
     text-align: center;
 }
 
+.year2024,
+.year2023,
+.year2022,
+.year2021,
+.year2020,
+.year2019,
+.year2018,
+.year2017,
+.year2016,
+.year2015 {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .select-info {
     border: 3px solid var(--green);
     border-radius: 40px;
@@ -1069,9 +1084,24 @@ input::-webkit-file-upload-button:hover {
     font-size: 36px;
     color: var(--green);
     margin-top: 20px;
-    margin-bottom: 300px;
+    /* margin-bottom: 300px; */
     flex-grow: 1;
     text-align: center;
+}
+
+.file {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.file::before {
+    content: url(media/pdf.png);
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin-right: 40px;
 }
 
 @media (max-width: 992px) {
