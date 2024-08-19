@@ -570,6 +570,65 @@ a:hover {
     color: var(--yellow);
 }
 
+.main-content {
+    min-height: 1005px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.description {
+    background-color: #f8f9fa;
+}
+
+.description h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    font-size: 1rem;
+    color: #337a53;
+    border: 2px solid #337a53;
+    border-radius: 50px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 24 24" fill%3D"none" stroke%3D"%23337a53" stroke-width%3D"2" stroke-linecap%3D"round" stroke-linejoin%3D"round"%3E%3Cpolyline points%3D"6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #337a53;
+}
+
+.p_ldsp {
+    font-size: 24px;
+}
+
+.h2_ldsp {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.H1_ldsp {
+    font-size: 74px;
+}
+
 @media (max-width: 992px) {
     .header {
         width: 100%;
