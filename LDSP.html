@@ -32,18 +32,54 @@
                 Ключевыми факторами успеха предприятия являются современные технологические решения, индивидуальный подход к клиенту и бережное отношение к природным ресурсам.
                 Подразделение «Югра-плит» укомплектовано современным оборудованием.
             </p>
-                <div class="container mt-5">
-                    <form>
-                        <div class="custom-select-wrapper">
-                            <select class="custom-select">
-                                <option selected disabled>Выберите пункт</option>
-                                <option value="1">Пункт 1</option>
-                                <option value="2">Пункт 2</option>
-                                <option value="3">Пункт 3</option>
-                            </select>
-                        </div>
-                    </form>
+            <div class="container mt-5">
+                
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Выберите пункт
+                    </button>
+                    <ul class="dropdown-menu custom-options" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Сертификаты</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="collapse" href="#decorGrid" role="button" aria-expanded="false" aria-controls="decorGrid">Каталог декоров</a></li>
+                        <li><a class="dropdown-item" href="#">Где купить</a></li>
+                    </ul>
                 </div>
+        
+                
+                <div class="collapse mt-4" id="decorGrid">
+                    <div class="row">
+                        <div class="col-md-3 col-6">
+                            <div class="decor-item">
+                                <div class="decor-image" style="background-color: #6B6A68;"></div>
+                                <div class="decor-title">ГРАФИТ</div>
+                                <div class="decor-code">#6B6A68</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="decor-item">
+                                <div class="decor-image" style="background-color: #8DA9BF;"></div>
+                                <div class="decor-title">ФОБОС</div>
+                                <div class="decor-code">#8DA9BF</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="decor-item">
+                                <div class="decor-image" style="background-image: url('img/image 24.png');"></div>
+                                <div class="decor-title">КАСПИЙ ТЕМНЫЙ</div>
+                                <div class="decor-code">#8DA9BF</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="decor-item">
+                                <div class="decor-image" style="background-image: url('img/image 25.png');"></div>
+                                <div class="decor-title">ДУБ АРИЗОНА</div>
+                                <div class="decor-code">#8DA9BF</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
