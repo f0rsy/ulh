@@ -1080,16 +1080,20 @@ input::-webkit-file-upload-button:hover {
 .select-info {
     border: 3px solid var(--green);
     border-radius: 40px;
-    width: 600px;
+    width: 600px; 
     height: 80px;
+    max-height: 200px; 
     background: #fff;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 20px;
     color: var(--green);
     margin-top: 20px;
     margin-bottom: 20px;
-    flex-grow: 1;
-    text-align: center;
+    overflow-y: auto; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 10px; 
+    box-sizing: border-box;
 }
 
 .file {
@@ -1105,6 +1109,39 @@ input::-webkit-file-upload-button:hover {
     width: 70px;
     height: 70px;
     margin-right: 40px;
+}
+
+.izveshchenie1,
+.izveshchenie2,
+.izveshchenie3,
+.izveshchenie4,
+.izveshchenie5,
+.izveshchenie6,
+.izveshchenie7,
+.izveshchenie8,
+.izveshchenie9,
+.izveshchenie10,
+.izveshchenie11,
+.izveshchenie12,
+.izveshchenie13,
+.izveshchenie14,
+.izveshchenie15,
+.izveshchenie16,
+.izveshchenie17,
+.izveshchenie18,
+.izveshchenie19,
+.izveshchenie20 {
+    display: none;
+}
+
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+li:before {
+    counter-increment: li;
+    content: counters(li, ".") ". ";
 }
 
 @media (max-width: 992px) {
@@ -1292,7 +1329,7 @@ input::-webkit-file-upload-button:hover {
         align-items: center;
         color: #000;
     }
-    
+
     .file::before {
         content: url(media/pdf.png);
         display: flex;

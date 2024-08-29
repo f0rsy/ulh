@@ -14,3 +14,5 @@ document.getElementById('baseSelector').addEventListener('change', function() {
         characteristicsBlock.style.display = 'none';
     }
 });
+
+
