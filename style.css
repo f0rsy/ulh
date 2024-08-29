@@ -765,8 +765,13 @@ a:hover {
     }
 
     .small-card {
-        width: 100%;
+        width: 95%;
         height: auto;
+    }
+
+    .small-card img {
+        width: 100%;
+        object-fit: cover;
     }
 
     .row-card {
@@ -900,5 +905,32 @@ a:hover {
         margin-bottom: 10px;
         font-size: 16px;
     }
+
+    .decor-item {
+        padding: 15px;
+        height: 200px;
+    }
+
+    .decor-title, .decor-title-black {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .decor-code {
+        font-size: 14px;
+    }
+
+    .p_ldsp {
+        font-size: 20px;
+    }
+
+    .h2_ldsp {
+        font-size: 32px;
+    }
+
+    .H1_ldsp {
+        font-size: 40px;
+    }
+
 
 }
