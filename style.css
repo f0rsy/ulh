@@ -627,27 +627,50 @@ a:hover {
 }
 
 .decor-item {
-    text-align: center;
+    position: relative;
+    background-color: #ccc;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    font-weight: bold;
     margin-bottom: 20px;
-}
-
-.decor-image {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 250px;
 }
 
 .decor-title {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #293133;
+}
+
+.decor-title-black {
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #F5F5F5;
 }
 
 .decor-code {
-    color: #8DA9BF;
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.decor-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    z-index: -1;
 }
 
 .p_ldsp {
