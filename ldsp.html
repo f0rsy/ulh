@@ -1,142 +1,696 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Древесно-стружечные плиты ламинированные</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <header>
-        <nav class="navbar bg-body-white">
-            <div class="container  d-flex">
-                <a class="navbar-brand" href="main.html">
-                    <img src="media/logo.svg" alt="Logo" class="d-inline-block align-text-top">
-                </a>
-                <div class="dropdown">
-                    <button class="butn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        RU
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">RU</a></li>
-                        <li><a class="dropdown-item" href="#">EN</a></li>
-                        <li><a class="dropdown-item" href="#">ZH</a></li>
-                    </ul>
-                </div>
-                <button class="menu-button" data-bs-toggle="modal" data-bs-target="#navigationModal">
-                    <span class="menu-text">МЕНЮ</span>
-                    <span class="menu-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
+<header>
+    <nav class="navbar bg-body-white">
+        <div class="container  d-flex">
+            <a class="navbar-brand" href="main.html">
+                <img src="media/logo.svg" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+            <div class="dropdown">
+                <button class="butn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    RU
                 </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">RU</a></li>
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                    <li><a class="dropdown-item" href="#">ZH</a></li>
+                </ul>
             </div>
-        </nav>
-        <div class="modal fade" id="navigationModal" tabindex="-1" aria-labelledby="navigationModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="media/logoWhite.png" alt="">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <h4 style="margin: 0;">О компании</h4>
-                                    <a class="nav-link" href="#">Органы управления и контроля</a>
-                                    <a class="nav-link" href="#">История холдинга</a>
-                                    <a class="nav-link" href="#">Основная деятельность</a>
-                                </div>
-                                <div class="col-md-3">
-                                    <h4 style="margin: 0;">Персонал</h4>
-                                    <a class="nav-link" href="vacancies.html">Вакансии</a>
-                                    <a class="nav-link" href="#">Конкурсы</a>
-                                    <a class="nav-link" href="education.html">Обучение</a>
-                                    <a class="nav-link" href="#">Награды</a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a class="text-light" href="units.html">
-                                        <h4>Подразделения</h4>
-                                    </a>
-                                    <a class="text-light" href="contacts.html">
-                                        <h4>Контакты</h4>
-                                    </a>
-                                    <a class="text-light" href="#">
-                                        <h4>Экология</h4>
-                                    </a>
-                                    <a class="text-light" href="#">
-                                        <h4>Новости</h4>
-                                    </a>
-                                    <a class="text-light" href="#">
-                                        <h4>Закупки</h4>
-                                    </a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a class="text-light" href="#">
-                                        <h4>Кредитным организациям</h4>
-                                    </a>
-                                    <a class="text-light" href="#">
-                                        <h4>Раскрытие информации</h4>
-                                    </a>
-                                    <a class="text-light" href="#">
-                                        <h4>Реализация активов</h4>
-                                    </a>
-                                </div>
+            <button class="menu-button" data-bs-toggle="modal" data-bs-target="#navigationModal">
+                <span class="menu-text">МЕНЮ</span>
+                <span class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="modal fade" id="navigationModal" tabindex="-1" aria-labelledby="navigationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="media/logoWhite.png" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4 style="margin: 0;">О компании</h4>
+                                <a class="nav-link" href="#">Органы управления и контроля</a>
+                                <a class="nav-link" href="#">История холдинга</a>
+                                <a class="nav-link" href="#">Основная деятельность</a>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 style="margin: 0;">Персонал</h4>
+                                <a class="nav-link" href="vacancies.html">Вакансии</a>
+                                <a class="nav-link" href="#">Конкурсы</a>
+                                <a class="nav-link" href="education.html">Обучение</a>
+                                <a class="nav-link" href="#">Награды</a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="text-light" href="units.html">
+                                    <h4>Подразделения</h4>
+                                </a>
+                                <a class="text-light" href="contacts.html">
+                                    <h4>Контакты</h4>
+                                </a>
+                                <a class="text-light" href="#">
+                                    <h4>Экология</h4>
+                                </a>
+                                <a class="text-light" href="#">
+                                    <h4>Новости</h4>
+                                </a>
+                                <a class="text-light" href="#">
+                                    <h4>Закупки</h4>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="text-light" href="kreditOrgaz.html">
+                                    <h4>Кредитным организациям</h4>
+                                </a>
+                                <a class="text-light" href="#">
+                                    <h4>Раскрытие информации</h4>
+                                </a>
+                                <a class="text-light" href="#">
+                                    <h4>Реализация активов</h4>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
+
+<body>
     <main>
-        <div class="photo-containerLong">
-            <img src="media/ldspBig.png" alt="">
-            <div class="container overlayUnits">
-                <button class="backButton"><svg height="20px" width="20px" version="1.1" id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 330 330" xml:space="preserve" transform="rotate(270)">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path id="XMLID_29_"
-                                d="M100.606,100.606L150,51.212V315c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15V51.212l49.394,49.394 C232.322,103.535,236.161,105,240,105c3.839,0,7.678-1.465,10.606-4.394c5.858-5.857,5.858-15.355,0-21.213l-75-75 c-5.857-5.858-15.355-5.858-21.213,0l-75,75c-5.858,5.857-5.858,15.355,0,21.213C85.251,106.463,94.749,106.463,100.606,100.606z">
-                            </path>
-                        </g>
-                    </svg><a href="units.html">обратно</a></button>
-                <div class="textUnits" style="text-transform: uppercase;">Древесно-стружечные плиты
-                    ламинированные</div>
+        <section class="main-content" style="background-image: url('img/7D8A9150 1.png');">
+            <div class="container text-white text-center">
+                <h1 class="display-4 H1_ldsp">Древесно-стружечные плиты ламинированные</h1>
             </div>
-        </div>
-        <div class="container">
-            <h3 style="margin-top: 50px;">Описание</h3>
-            <p style="font-size: 20px;">В настоящее время югорская  плита оценивается производителями мебели как одна из
-                наиболее качественных на рынке.</p>
-            <p style="font-size: 20px;">
-                Ключевыми факторами успеха предприятия являются современные технологические решения, индивидуальный
-                подход к клиенту и бережное отношение к природным ресурсам.
-                Подразделение «Югра-плит» укомплектовано современным оборудованием.</p>
-            <select name="" id="" class="baseSelector">
-                <option value="">Выберете пункт</option>
-                <option value="priceList">Прайс-лист</option>
-                <option value="priceList">Каталог декоров</option>
-                <option value="priceList">Где купить</option>
-            </select>
-        </div>
+        </section>
+
+        <section class="description py-5">
+            <div class="container">
+                <h2 class="h2_ldsp">Описание</h2>
+                <p class="p_ldsp">
+                    В настоящее время югорская  плита оценивается производителями мебели как одна из наиболее
+                    качественных на рынке.
+                    <br>
+                    <br>
+                    Ключевыми факторами успеха предприятия являются современные технологические решения, индивидуальный
+                    подход к клиенту и бережное отношение к природным ресурсам.
+                    Подразделение «Югра-плит» укомплектовано современным оборудованием.
+                </p>
+                <div class="container mt-5">
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle custom-dropdown" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Выберите пункт
+                        </button>
+                        <ul class="dropdown-menu custom-options" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Сертификаты</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="collapse" href="#decorGrid" role="button"
+                                    aria-expanded="false" aria-controls="decorGrid">Каталог декоров</a></li>
+                            <li><a class="dropdown-item" href="#">Где купить</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Deimos.jpg');">
+                                    <div class="decor-title-black">ДЕЙМОС</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Tarsis.jpg');">
+                                    <div class="decor-title-black">ТАРСИС</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Tarsis_white.jpg');">
+                                    <div class="decor-title">ТАРСИС БЕЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Fobos.jpg');">
+                                    <div class="decor-title-black">ФОБОС</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Pasiphae.jpg');">
+                                    <div class="decor-title-black">Pasiphae</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Aluminiy.jpg');">
+                                    <div class="decor-title-black">АЛЮМИНИЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Baynty.jpg');">
+                                    <div class="decor-title">БАУНТИ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Beg.jpg');">
+                                    <div class="decor-title">БЕЖЕВЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Belosneg.jpg');">
+                                    <div class="decor-title">БЕЛОСНЕЖНЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/White.jpg');">
+                                    <div class="decor-title">БЕЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Biryza.jpg');">
+                                    <div class="decor-title-black">БИРЮЗА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Bodega.jpg');">
+                                    <div class="decor-title">БОДЕГА</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Bodega_white.jpg');">
+                                    <div class="decor-title">БОДЕГА СВЕТЛАЯ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Buk_bavaria.jpg');">
+                                    <div class="decor-title">БУК БАВАРИЯ СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Venge_linum.jpg');">
+                                    <div class="decor-title-black">ВЕНГЕ ЛИНУМ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Venge_Copento.jpg');">
+                                    <div class="decor-title-black">ВЕНГЕ СОРЕНТО</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Vishna_oksford.jpg');">
+                                    <div class="decor-title-black">ВИШНЯ ОКСФОРД</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/White_wood.jpg');">
+                                    <div class="decor-title">ВЫБЕЛЕННОЕ ДЕРЕВО</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Grafit.jpg');">
+                                    <div class="decor-title-black">ГРАФИТ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Garra_white.jpg');">
+                                    <div class="decor-title">ДЖАРРА СВЕТЛАЯ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Garra_black.jpg');">
+                                    <div class="decor-title-black">ДЖАРРА ТЁМНАЯ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/April_nordik.jpg');">
+                                    <div class="decor-title">ДУБ АПРЕЛЬСКИЙ НОРДИК</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Arizona.jpg');">
+                                    <div class="decor-title-black">ДУБ АРИЗОНА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Atlanta.jpg');">
+                                    <div class="decor-title">ДУБ АТЛАНТА</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Atlanta_black.jpg');">
+                                    <div class="decor-title-black">ДУБ АТЛАНТА ТЁМНЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Votan_wood.jpg');">
+                                    <div class="decor-title-black">ДУБ ВОТАН</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Dewon_wood.jpg');">
+                                    <div class="decor-title">ДУБ ДЕВОН</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Kanon_monyment.jpg');">
+                                    <div class="decor-title-black">ДУБ КАНЬОН МОНУМЕНТ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Koburg.jpg');">
+                                    <div class="decor-title">ДУБ КОБУРГ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Madura.jpg');">
+                                    <div class="decor-title">ДУБ МАДУРА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Rivera.jpg');">
+                                    <div class="decor-title-black">ДУБ РИВЬЕРА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Rivera_126.jpg');">
+                                    <div class="decor-title-black">ДУБ РИВЬЕРА 126</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Rokpail.jpg');">
+                                    <div class="decor-title-black">ДУБ РОКПАЙЛ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Satana.jpg');">
+                                    <div class="decor-title-black">ДУБ САНТАНА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Sedan.jpg');">
+                                    <div class="decor-title">ДУБ СЕДАН</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Sonoma.jpg');">
+                                    <div class="decor-title">ДУБ СОНОМА</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Sonoma_white.jpg');">
+                                    <div class="decor-title">ДУБ СОНОМА СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Telemark.jpg');">
+                                    <div class="decor-title-black">ДУБ ТЕЛЕМАРК</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Shamoni.jpg');">
+                                    <div class="decor-title">ДУБ ШАМОНИ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Yellow.jpg');">
+                                    <div class="decor-title">ЖЁЛТЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Green.jpg');">
+                                    <div class="decor-title-black">ЗЕЛЁНЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Indigo.jpg');">
+                                    <div class="decor-title-black">ИНДИГО</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Intra.jpg');">
+                                    <div class="decor-title-black">ИНТРА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Capuchino.jpg');">
+                                    <div class="decor-title-black">КАПУЧИНО</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Capuchino_white.jpg');">
+                                    <div class="decor-title">КАПУЧИНО СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Karamel.jpg');">
+                                    <div class="decor-title">КАРАМЕЛЬ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Kaspiy_white.jpg');">
+                                    <div class="decor-title-black">КАСПИЙ СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Kaspiy_black.jpg');">
+                                    <div class="decor-title-black">КАСПИЙ ТЁМНЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Kathult.jpg');">
+                                    <div class="decor-title">КАТХУЛЬТ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Kashemir_grey.jpg');">
+                                    <div class="decor-title">КАШЕМИР СЕРЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Klen_tanzay.jpg');">
+                                    <div class="decor-title">КЛЕН ТАНЗАУ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Red.jpg');">
+                                    <div class="decor-title-black">КРАСНЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Laim.jpg');">
+                                    <div class="decor-title">ЛАЙМ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Leda.jpg');">
+                                    <div class="decor-title">ЛЕДА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Len.jpg');">
+                                    <div class="decor-title">ЛЁН</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Nelson.jpg');">
+                                    <div class="decor-title-black">НЕЛЬСОН</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Noche_gvarnery.jpg');">
+                                    <div class="decor-title-black">НОЧЕ ГВАРНЕНИ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Noche_ecco.jpg');">
+                                    <div class="decor-title-black">НОЧЕ ЭККО</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Olha.jpg');">
+                                    <div class="decor-title-black">ОЛЬХА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Orange.jpg');">
+                                    <div class="decor-title-black">ОРАНЖЕВЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Orex_milansky.jpg');">
+                                    <div class="decor-title-black">ОРЕХ МИЛАНСКИЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Persepol.jpg');">
+                                    <div class="decor-title-black">ПЕРСЕПОЛЬ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/persepol_white.jpg');">
+                                    <div class="decor-title-black">ПЕРСЕПОЛЬ СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Persepol_black.jpg');">
+                                    <div class="decor-title-black">ПЕРСЕПОЛЬ ТЁМНЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Pihta.jpg');">
+                                    <div class="decor-title-black">ПИХТА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Rustika.jpg');">
+                                    <div class="decor-title-black">РУСТИКА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Gray.jpg');">
+                                    <div class="decor-title">СЕРЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Sanatorini_white.jpg');">
+                                    <div class="decor-title">СОСНА САНТОРИНИ СВЕТЛАЯ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Sanatorini_black.jpg');">
+                                    <div class="decor-title-black">СОСНА САНТОРИ ТЁМНАЯ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Tacsonia.jpg');">
+                                    <div class="decor-title-black">ТАКСОНИЯ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/tacsonia_white.jpg');">
+                                    <div class="decor-title">ТАКСОНИЯ СВЕТЛАЯ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/tacsonia_black.jpg');">
+                                    <div class="decor-title-black">ТАКСОНИЯ ТЁМНАЯ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Titan.jpg');">
+                                    <div class="decor-title-black">ТИТАН</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Titon.jpg');">
+                                    <div class="decor-title-black">ТРИТОН</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Feba.jpg');">
+                                    <div class="decor-title-black">ФЕБА</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Findus_beg.jpg');">
+                                    <div class="decor-title">ФЕНДУС БЕЖЕВЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Purple.jpg');">
+                                    <div class="decor-title">ФИОЛЕТ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Fistahka.jpg');">
+                                    <div class="decor-title-black">ФИСТАШКОВЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Haron.jpg');">
+                                    <div class="decor-title-black">ХАРОН</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Cement_white.jpg');">
+                                    <div class="decor-title">ЦЕМЕНТ СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Cement_black.jpg');">
+                                    <div class="decor-title-black">ЦЕМЕНТ ТЁМНЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Black.jpg');">
+                                    <div class="decor-title-black">ЧЁРНЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Hvecarski_vaz.jpg');">
+                                    <div class="decor-title-black">ШВЕЙЦАРСКИЙ ВЯЗ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Elara.jpg');">
+                                    <div class="decor-title-black">ЭЛАРА</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="collapse mt-4" id="decorGrid">
+                        <div class="row">
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Ancor_white.jpg');">
+                                    <div class="decor-title">ЯСЕНЬ АНКОР СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Ancor_black.jpg');">
+                                    <div class="decor-title-black">ЯСЕНЬ АНКОР ТЁМНЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Shimo_white.jpg');">
+                                    <div class="decor-title">ЯСЕНЬ ШИМО СВЕТЛЫЙ</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="decor-item" style="background-image: url('img/Shimo_black.jpg');">
+                                    <div class="decor-title-black">ЯСЕНЬ ШИМО ТЁМНЫЙ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer bg-dark text-white py-4">
         <div class="container">
             <div class="row align-items-center" style="height: 300px;">
                 <div class="col-md-4">
-                    <img src="media/logo.svg" alt="Логотип">
+                    <img src="img/logo.png" alt="Логотип">
                 </div>
                 <div class="col-md-4">
                     <p>Телефон: +7 3467 35-62-73</p>
@@ -151,7 +705,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
