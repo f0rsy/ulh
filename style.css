@@ -1378,7 +1378,7 @@ li:before {
 }
 
 .H2-card1 {
-    color: #000;
+    color: #FFFFFF;
     font-family: "Montserrat Alternates";
     font-size: 32px;
     font-style: normal;
@@ -1389,12 +1389,12 @@ li:before {
 
 .button_close {
     border-radius: 20px;
-    border: 2px solid var(--green);
+    border: 2px solid #FFFFFF;
     width: 250px;
     height: 40px;
     transition: 300ms;
 
-    color: var(--green);
+    color: #FFFFFF;
     font-family: "Montserrat Alternates";
     font-size: 20px;
     font-style: normal;
