@@ -99,13 +99,9 @@ a {
 .menu-icon span {
     display: block;
     width: 25px;
-    /* Ширина каждой линии */
     height: 3px;
-    /* Высота каждой линии */
     background-color: black;
-    /* Цвет линий */
     margin: 2px 0;
-    /* Расстояние между линиями */
 }
 
 .menu-icon {
