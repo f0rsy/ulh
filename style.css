@@ -1406,11 +1406,7 @@ p {
 }
 
 .H2-card1 {
-<<<<<<< HEAD
-    color: #FFFFFF;
-=======
     color: #ffffff;
->>>>>>> 55525317322166dcf05d9bf77506ad14c7d692eb
     font-family: "Montserrat Alternates";
     font-size: 24px;
     font-style: normal;
@@ -1420,20 +1416,12 @@ p {
 
 .button_close {
     border-radius: 20px;
-<<<<<<< HEAD
     border: 2px solid #FFFFFF;
-=======
-    border: 2px solid var(--yellow);
->>>>>>> 55525317322166dcf05d9bf77506ad14c7d692eb
     width: 250px;
     height: 40px;
     transition: 300ms;
 
-<<<<<<< HEAD
     color: #FFFFFF;
-=======
-    color: var(--yellow);
->>>>>>> 55525317322166dcf05d9bf77506ad14c7d692eb
     font-family: "Montserrat Alternates";
     font-size: 20px;
     font-style: normal;
