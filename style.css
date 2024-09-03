@@ -1447,14 +1447,20 @@ p {
 }
 .text-container {
     flex: 1;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 .text-container h5 {
     font-size: 36px;
+    margin-top: 50px;
 }
+.text-container h6 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
 .text-container p {
     margin-top: 0;
     opacity: 0.7;
@@ -1508,6 +1514,7 @@ p {
     width: 1375px;
     height: 370px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .custom-card img {
@@ -1520,6 +1527,7 @@ p {
 .custom-card-content {
     padding: 20px;
     flex-grow: 1;
+    position: relative;
 }
 
 .custom-card-title {
@@ -1529,8 +1537,9 @@ p {
 }
 
 .custom-card-text {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
 .custom-card-footer {
@@ -1538,6 +1547,9 @@ p {
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .custom-card-footer a {
@@ -1562,6 +1574,7 @@ p {
     margin: 10px;
     flex-grow: 1;
     transition: 300ms;
+    position: relative;
 }
 .small-card:hover {
     border: 2px solid var(--yellow);
@@ -1572,18 +1585,25 @@ p {
     height: 273px;
     object-fit: cover;
 }
+
 .small-card-content {
     padding: 10px;
+    position: relative;
 }
+
 .small-card-title {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 0;
 }
+
 .small-card-footer {
-    text-align: right;
     font-size: 0.8rem;
     color: #666;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
 }
 
 .chart-container {
@@ -1816,7 +1836,50 @@ a:hover {
     font-size: 74px;
 }
 
+.H1-number {
+    color: var(--green);
+    font-size: 40px;
+}
 
+.chart-container {
+    width: 60%;
+    margin: 50px auto; /* Центрируем контейнер */
+    padding-top: 20px;
+}
+.bar {
+    background-color: #1E5631; /* Цвет столбцов */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+.bar-label {
+    margin-top: 10px;
+    text-align: center;
+}
+.chart {
+    height: 300px; /* Общая высота диаграммы */
+    display: flex;
+    align-items: flex-end; /* Выровнять элементы по нижнему краю */
+    border-left: 2px solid #FFCC33; /* Жёлтая левая граница */
+    border-bottom: 2px solid #FFCC33; /* Жёлтая нижняя граница */
+    padding: 0 20px;
+}
+.chart::before {
+    content: "Количество экспорта";
+    position: absolute;
+    left: -50px;
+    bottom: -35px;
+    transform: rotate(-90deg);
+    font-weight: bold;
+}
+.y-axis-label {
+    position: absolute;
+    left: -40px;
+    text-align: right;
+    color: #000;
+    font-size: 14px;
+}
 
 @media (max-width: 992px) {
 
@@ -2179,6 +2242,7 @@ a:hover {
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        background-color: #FFFFFF;
     }
 
     .image-container {
