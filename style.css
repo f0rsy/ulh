@@ -2260,7 +2260,7 @@ a:hover {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        background-color: #FFFFFF;
+        background-color: var(--green);
     }
 
     .image-container {
@@ -2340,5 +2340,35 @@ a:hover {
 
     .H1_ldsp {
         font-size: 40px;
+    }
+
+    .chart-container {
+        width: 100%; /* Графики занимают всю ширину */
+        margin: 0 0 20px 0; /* Отступ снизу для разделения графиков */
+        display: block; /* Блочный элемент, чтобы графики шли друг за другом */
+    }
+    
+    .chart {
+        height: 180px; /* Немного уменьшаем высоту графиков */
+        padding: 0 10px; /* Оставляем небольшой отступ внутри графика */
+    }
+    
+    .bar {
+        width: 60px; /* Уменьшаем ширину столбиков */
+        margin-right: 5px; /* Уменьшаем отступы между столбиками */
+    }
+    
+    .bar-percentage, .bar-value {
+        font-size: 10px; /* Уменьшаем размер текста для лучшего отображения на маленьком экране */
+    }
+    
+    .chart-title {
+        font-size: 14px; /* Уменьшаем размер заголовка */
+        margin-top: 5px; /* Уменьшаем верхний отступ */
+    }
+    
+    .x-axis-labels {
+        padding-top: 5px; /* Уменьшаем отступ между графиком и метками */
+        justify-content: space-around; /* Равномерное распределение меток по оси X */
     }
 }
