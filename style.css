@@ -668,22 +668,22 @@ svg path {
 }
 
 .unitCard-1 {
-    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/ЮграТрансСервис.png");
+    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/img/ЮграТрансСервис.png");
     background-size: cover;
 }
 
 .unitCard-2 {
-    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/лесопильныеЗаводыЮгры.png");
+    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/img/лесопильныеЗаводыЮгры.png");
     background-size: cover;
 }
 
 .unitCard-3 {
-    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/ЛВЛЮгра.png");
+    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/img/ЛВЛЮгра.png");
     background-size: cover;
 }
 
 .unitCard-4 {
-    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/ЮграПлит.png");
+    background: linear-gradient(0deg, rgba(31, 98, 60, 0.9) 0%, rgba(31, 98, 60, 0) 70%), url("media/img/ЮграПлит.png");
     background-size: cover;
 }
 
@@ -1129,6 +1129,7 @@ input::-webkit-file-upload-button:hover {
 .izveshchenie19,
 .izveshchenie20 {
     display: none;
+    margin-bottom: 50px;
 }
 
 ol {
@@ -1235,7 +1236,7 @@ h3 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -1410,7 +1411,7 @@ p {
     font-family: "Montserrat Alternates";
     font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     margin-top: 50px;
 }
 
