@@ -1186,12 +1186,8 @@ li:before {
 }
 
 .plita_text {
-    color: #000;
     text-align: center;
-    font-family: "Montserrat Alternates";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: normal;
 }
 
@@ -1222,7 +1218,6 @@ li:before {
 }
 
 .column-custom img {
-    max-width: 100px;
     margin-bottom: 15px;
 }
 
@@ -1233,11 +1228,6 @@ li:before {
 h3 {
     color: #004d40; 
     margin-bottom: 15px;
-}
-
-p {
-    font-size: 20px;
-    line-height: 1.6;
 }
 
 .card_header {
@@ -1423,15 +1413,15 @@ p {
     transition: 300ms;
 
     color: #FFFFFF;
-    font-family: "Montserrat Alternates";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     background-color: inherit;
 }
 .button_close:hover {
     border: 2px solid var(--yellow);
+}
+
+.button_marg {
+    margin-left: 20px;
 }
 
 .modal-lg {
@@ -1533,7 +1523,7 @@ p {
 
 .custom-card-title {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-family: MontserratBold;
     margin-top: 0;
 }
 
@@ -1593,8 +1583,8 @@ p {
 }
 
 .small-card-title {
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 15px;
+    font-family: MontserratSemiBold;
     margin-top: 0;
 }
 
@@ -1828,6 +1818,14 @@ a:hover {
     font-size: 24px;
 }
 
+.p_eco{
+    font-size: 25px;
+}
+
+.H3_eco {
+    font-size: 30px;
+}
+
 .h2_ldsp {
     font-size: 40px;
     font-weight: 700;
@@ -1898,6 +1896,10 @@ a:hover {
 }
 .x-axis-labels div {
     text-align: center;
+}
+
+.H5_mcb {
+    margin-left: 20px;
 }
 
 @media (max-width: 992px) {
@@ -2114,7 +2116,7 @@ a:hover {
     }
 
     .text-container {
-        font-size: 18px;
+        font-size: 25px;
         padding-top: 15px;
     }
 
