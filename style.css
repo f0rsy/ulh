@@ -1443,11 +1443,11 @@ h3 {
 
 .H2-card1 {
     color: #ffffff;
-    font-family: "Montserrat Alternates";
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
     margin-top: 50px;
+    font-family: MontserratReg;
 }
 
 .button_close {
@@ -2379,7 +2379,7 @@ a:hover {
     }
 
     .H2-card1 {
-        font-size: 24px;
+        font-size: 18px;
         margin-top: 20px;
     }
 
@@ -2488,5 +2488,16 @@ a:hover {
         /* Уменьшаем отступ между графиком и метками */
         justify-content: space-around;
         /* Равномерное распределение меток по оси X */
+    }
+
+    .text-container ul li span {
+        opacity: 0.7;
+        font-size: 16px;
+    }
+
+    .H5_mcb {
+        margin: 0px;
+        font-size: 20px;
+        padding: 0px;
     }
 }
