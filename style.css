@@ -1072,19 +1072,19 @@ input::-webkit-file-upload-button:hover {
 .select-info {
     border: 3px solid var(--green);
     border-radius: 40px;
-    width: 600px; 
+    width: 600px;
     height: 80px;
-    max-height: 200px; 
+    max-height: 200px;
     background: #fff;
     font-weight: 400;
     font-size: 20px;
     color: var(--green);
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow-y: auto; 
+    overflow-y: auto;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-left: 10px; 
+    padding-left: 10px;
     box-sizing: border-box;
 }
 
@@ -1142,8 +1142,44 @@ input::-webkit-file-upload-button:hover {
     width: 300px;
 }
 
+.page404 {
+    width: 100%;
+    height: 100%;
+    background-image: url('media/img/404Background.png');
+}
 
+.text404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 170px;
+}
 
+.page404 h1 {
+    font-family: MontserratBold;
+    font-size: 250px;
+    color: #fff;
+}
+
+.page404 p {
+    font-family: MontserratReg;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.page404 a {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    padding: 8px 59px;
+    margin-top: 80px;
+}
 
 
 
@@ -1196,7 +1232,7 @@ input::-webkit-file-upload-button:hover {
     line-height: normal;
     width: 340px;
     padding-top: 30px;
-    }
+}
 
 .H2_eco {
     text-align: center;
@@ -1279,7 +1315,7 @@ h3 {
 
 .cards_2 {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 
     margin-bottom: 120px;
@@ -1305,6 +1341,7 @@ h3 {
 .cards_2-3 {
     gap: 110px;
 }
+
 .card_1_1 {
     margin-top: 170px;
 
@@ -1326,6 +1363,7 @@ h3 {
     border: 10px solid var(--green);
     transition: 300ms;
 }
+
 .card_1_2:hover {
     border: 10px solid var(--yellow);
 }
@@ -1337,6 +1375,7 @@ h3 {
     border: 10px solid var(--green);
     transition: 300ms;
 }
+
 .card_1_3:hover {
     border: 10px solid var(--yellow);
 }
@@ -1351,6 +1390,7 @@ h3 {
     border: 10px solid var(--green);
     transition: 300ms;
 }
+
 .card_1_4:hover {
     border: 10px solid var(--yellow);
 }
@@ -1385,6 +1425,7 @@ h3 {
     align-items: center;
     padding: 20px;
 }
+
 .image-container img {
     max-width: 100%;
     max-height: 100%;
@@ -1420,6 +1461,7 @@ h3 {
     font-size: 20px;
     background-color: inherit;
 }
+
 .button_close:hover {
     border: 2px solid var(--yellow);
 }
@@ -1431,15 +1473,18 @@ h3 {
 .modal-lg {
     max-width: 1800px;
 }
+
 .modal-content {
     height: 902px;
     border: none;
 }
+
 .modal-body {
     display: flex;
     align-items: flex-start;
     height: 100%;
 }
+
 .text-container {
     flex: 1;
     padding: 0px;
@@ -1447,10 +1492,12 @@ h3 {
     flex-direction: column;
     gap: 50px;
 }
+
 .text-container h5 {
     font-size: 36px;
     margin-top: 50px;
 }
+
 .text-container h6 {
     font-size: 24px;
     margin-top: 20px;
@@ -1460,24 +1507,30 @@ h3 {
     margin-top: 0;
     opacity: 0.7;
 }
+
 .text-container ul {
     margin-top: 0;
     padding-left: 20px;
     list-style-type: none;
 }
+
 .text-container ul li {
     margin-bottom: 50px;
 }
+
 .text-container ul li:last-child {
     margin-bottom: 0;
 }
+
 .text-container ul li span {
     opacity: 0.7;
 }
+
 .awards-list li {
     position: relative;
     padding-left: 25px;
 }
+
 .awards-list li::before {
     content: "";
     position: absolute;
@@ -1552,6 +1605,7 @@ h3 {
     text-decoration: none;
     transition: 300ms;
 }
+
 .custom-card-footer a:hover {
     color: var(--yellow);
 }
@@ -1560,6 +1614,7 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+
 .small-card {
     border: 2px solid var(--green);
     border-radius: 20px;
@@ -1571,6 +1626,7 @@ h3 {
     transition: 300ms;
     position: relative;
 }
+
 .small-card:hover {
     border: 2px solid var(--yellow);
 }
@@ -1605,6 +1661,7 @@ h3 {
     width: 200px;
     margin: 20px;
 }
+
 .chart {
     display: flex;
     align-items: flex-end;
@@ -1613,6 +1670,7 @@ h3 {
     border-left: 2px solid var(--yellow);
     border-bottom: 2px solid var(--yellow);
 }
+
 .chart-bar {
     width: 30%;
     margin: 0 5px;
@@ -1622,25 +1680,31 @@ h3 {
     font-size: 0.8em;
     position: relative;
 }
+
 .chart-title {
     text-align: center;
     font-size: 1.2em;
 }
+
 .bar-70 {
     height: 70%;
 }
+
 .bar-20 {
     height: 20%;
 }
+
 .bar-10 {
     height: 10%;
 }
+
 .percentage-label {
     position: absolute;
     left: -40px;
     font-size: 0.8em;
     color: black;
 }
+
 .percentage-line {
     position: absolute;
     left: -8px;
@@ -1648,19 +1712,24 @@ h3 {
     height: 2px;
     background-color: var(--yellow);
 }
+
 .percentage-70 {
     bottom: 70%;
 }
+
 .percentage-20 {
     bottom: 20%;
 }
+
 .percentage-10 {
     bottom: 10%;
 }
+
 .label-container {
     display: flex;
     justify-content: space-between;
 }
+
 .label {
     width: 30%;
     text-align: center;
@@ -1711,6 +1780,7 @@ a {
     text-decoration: none;
     transition: 300ms;
 }
+
 a:hover {
     color: var(--yellow);
 }
@@ -1822,7 +1892,7 @@ a:hover {
     font-size: 24px;
 }
 
-.p_eco{
+.p_eco {
     font-size: 25px;
 }
 
@@ -1848,56 +1918,80 @@ a:hover {
 .chart-container {
     width: 30%;
     padding-top: 20px;
-    margin: 0 15px; /* Отступ между графиками */
+    margin: 0 15px;
+    /* Отступ между графиками */
     display: inline-block;
-    vertical-align: top; /* Для выравнивания диаграмм в одну строку */
+    vertical-align: top;
+    /* Для выравнивания диаграмм в одну строку */
 }
+
 .chart {
-    height: 200px; /* Общая высота диаграммы */
+    height: 200px;
+    /* Общая высота диаграммы */
     display: flex;
-    align-items: flex-end; /* Выровнять элементы по нижнему краю */
-    border-left: 2px solid #FFCC33; /* Жёлтая левая граница */
-    border-bottom: 2px solid #FFCC33; /* Жёлтая нижняя граница */
+    align-items: flex-end;
+    /* Выровнять элементы по нижнему краю */
+    border-left: 2px solid #FFCC33;
+    /* Жёлтая левая граница */
+    border-bottom: 2px solid #FFCC33;
+    /* Жёлтая нижняя граница */
     padding: 0 10px;
-    margin-bottom: 20px; /* Отступ под графиком */
-    position: relative; /* Относительное позиционирование для меток */
+    margin-bottom: 20px;
+    /* Отступ под графиком */
+    position: relative;
+    /* Относительное позиционирование для меток */
 }
+
 .bar {
-    background-color: #1E5631; /* Цвет столбцов */
+    background-color: #1E5631;
+    /* Цвет столбцов */
     text-align: center;
     color: white;
     font-weight: bold;
     position: relative;
-    margin-right: 10px; /* Отступ между столбиками */
-    width: 80px; /* Ширина столбиков */
+    margin-right: 10px;
+    /* Отступ между столбиками */
+    width: 80px;
+    /* Ширина столбиков */
 }
+
 .bar-percentage {
     position: absolute;
-    top: -25px; /* Позиционирование над столбцом */
+    top: -25px;
+    /* Позиционирование над столбцом */
     left: 50%;
     transform: translateX(-50%);
-    color: #000; /* Цвет текста */
+    color: #000;
+    /* Цвет текста */
     font-size: 12px;
     font-weight: bold;
 }
+
 .bar-value {
     position: absolute;
-    bottom: 10px; /* Позиционирование внутри столбца */
+    bottom: 10px;
+    /* Позиционирование внутри столбца */
     left: 50%;
     transform: translateX(-50%);
     font-size: 12px;
-    color: white; /* Цвет текста внутри столбца */
+    color: white;
+    /* Цвет текста внутри столбца */
 }
+
 .chart-title {
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
 }
+
 .x-axis-labels {
     display: flex;
-    justify-content: space-evenly; /* Выровнять метки по горизонтали */
-    padding-top: 10px; /* Отступ между графиком и метками */
+    justify-content: space-evenly;
+    /* Выровнять метки по горизонтали */
+    padding-top: 10px;
+    /* Отступ между графиком и метками */
 }
+
 .x-axis-labels div {
     text-align: center;
 }
@@ -2143,7 +2237,10 @@ a:hover {
         padding: 20px;
     }
 
-    .card_1_1, .card_1_2, .card_1_3, .card_1_4 {
+    .card_1_1,
+    .card_1_2,
+    .card_1_3,
+    .card_1_4 {
         width: 100%;
         height: auto;
     }
@@ -2217,7 +2314,7 @@ a:hover {
         align-items: center;
         text-align: center;
     }
-    
+
     .card_header img {
         margin-bottom: 10px;
         max-width: 100%;
@@ -2328,7 +2425,8 @@ a:hover {
         height: 200px;
     }
 
-    .decor-title, .decor-title-black {
+    .decor-title,
+    .decor-title-black {
         font-size: 20px;
         margin-bottom: 8px;
     }
@@ -2350,32 +2448,45 @@ a:hover {
     }
 
     .chart-container {
-        width: 100%; /* Графики занимают всю ширину */
-        margin: 0 0 20px 0; /* Отступ снизу для разделения графиков */
-        display: block; /* Блочный элемент, чтобы графики шли друг за другом */
+        width: 100%;
+        /* Графики занимают всю ширину */
+        margin: 0 0 20px 0;
+        /* Отступ снизу для разделения графиков */
+        display: block;
+        /* Блочный элемент, чтобы графики шли друг за другом */
     }
-    
+
     .chart {
-        height: 180px; /* Немного уменьшаем высоту графиков */
-        padding: 0 10px; /* Оставляем небольшой отступ внутри графика */
+        height: 180px;
+        /* Немного уменьшаем высоту графиков */
+        padding: 0 10px;
+        /* Оставляем небольшой отступ внутри графика */
     }
-    
+
     .bar {
-        width: 60px; /* Уменьшаем ширину столбиков */
-        margin-right: 5px; /* Уменьшаем отступы между столбиками */
+        width: 60px;
+        /* Уменьшаем ширину столбиков */
+        margin-right: 5px;
+        /* Уменьшаем отступы между столбиками */
     }
-    
-    .bar-percentage, .bar-value {
-        font-size: 10px; /* Уменьшаем размер текста для лучшего отображения на маленьком экране */
+
+    .bar-percentage,
+    .bar-value {
+        font-size: 10px;
+        /* Уменьшаем размер текста для лучшего отображения на маленьком экране */
     }
-    
+
     .chart-title {
-        font-size: 14px; /* Уменьшаем размер заголовка */
-        margin-top: 5px; /* Уменьшаем верхний отступ */
+        font-size: 14px;
+        /* Уменьшаем размер заголовка */
+        margin-top: 5px;
+        /* Уменьшаем верхний отступ */
     }
-    
+
     .x-axis-labels {
-        padding-top: 5px; /* Уменьшаем отступ между графиком и метками */
-        justify-content: space-around; /* Равномерное распределение меток по оси X */
+        padding-top: 5px;
+        /* Уменьшаем отступ между графиком и метками */
+        justify-content: space-around;
+        /* Равномерное распределение меток по оси X */
     }
 }
