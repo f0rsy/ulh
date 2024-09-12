@@ -2384,7 +2384,8 @@ a:hover {
     }
 
     .button_close {
-        width: 100%;
+        width: 300px;
+        text-align: center;
         height: 40px;
         font-size: 18px;
         margin-top: 20px;
@@ -2396,6 +2397,8 @@ a:hover {
 
     .text-container ul li {
         margin-bottom: 30px;
+        text-align: center;
+        width: 330px;
     }
 
     .footer {
@@ -2497,7 +2500,13 @@ a:hover {
 
     .H5_mcb {
         margin: 0px;
-        font-size: 20px;
+        font-size: 17px;
         padding: 0px;
+    }
+
+    .text-container ul {
+        margin-top: 0;
+        padding: 0px;
+        list-style-type: none;
     }
 }
