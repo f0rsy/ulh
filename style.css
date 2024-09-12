@@ -36,7 +36,7 @@ a {
     height: 80px;
 }
 
-.modal-content_MCB {
+.modal-content {
     background-color: var(--green);
     color: white;
 }
