@@ -36,7 +36,7 @@ a {
     height: 80px;
 }
 
-.modal-content {
+.modal-content_MCB {
     background-color: var(--green);
     color: white;
 }
@@ -1403,7 +1403,7 @@ h3 {
     height: 905px;
 }
 
-.modal-body {
+.modal-body_MCB {
     display: flex;
     align-items: flex-start;
     height: 100%;
@@ -1479,7 +1479,7 @@ h3 {
     border: none;
 }
 
-.modal-body {
+.modal-body_MCB {
     display: flex;
     align-items: flex-start;
     height: 100%;
@@ -2360,7 +2360,7 @@ a:hover {
         padding: 20px;
     }
 
-    .modal-body {
+    .modal-body_MCB {
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -2399,6 +2399,7 @@ a:hover {
         margin-bottom: 30px;
         text-align: center;
         width: 330px;
+        padding: 0px;
     }
 
     .footer {
@@ -2502,6 +2503,7 @@ a:hover {
         margin: 0px;
         font-size: 17px;
         padding: 0px;
+        padding-right: 50px;
     }
 
     .text-container ul {
