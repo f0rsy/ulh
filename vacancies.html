@@ -100,7 +100,7 @@
     <main>
         <div class="container">
             <h2>Вакансии</h2>
-            <p style="font-weight: 400; font-size: 28px;">В АО «Югорский лесопромышленный холдинг» открыта вакансия</p>
+            <p class="vacancies-heading">В АО «Югорский лесопромышленный холдинг» открыта вакансия</p>
             <select class="select-vacancies" name="vacancy" id="vacancy">
                 <option value="" disabled selected>Выберите вакансию</option>
                 <option value="manager">Менеджер по продвижению продукта</option>
@@ -143,9 +143,8 @@
             <button type="button" class="openButton" data-bs-toggle="modal" data-bs-target="#formModal">
                 Заполнить
             </button>
-            
-            <!-- Модальное окно -->
-            <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+
+            <!-- <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered custom-modal">
                     <div class="modal-content anket">
                         <div class="modal-header" style="background-color: #fff;">
@@ -155,16 +154,16 @@
                         <div class="modal-body">
                             <form action="">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" id="name" placeholder="ФИО *">
+                                    <input type="text" class="form-control" id="name" placeholder="ФИО">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="tel" class="form-control" id="phone" placeholder="Мобильный телефон *">
+                                    <input type="tel" class="form-control" id="phone" placeholder="Мобильный телефон">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" id="email" placeholder="E-mail *">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="upload" class="form-label">Прикрепите заполненный файл с резюме *</label>
+                                    <label for="upload" class="form-label">Прикрепите заполненный файл с резюме</label>
                                     <input type="file" class="form-control-file" id="upload">
                                 </div>
                                 <div class="mb-3">
@@ -179,8 +178,46 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <div class="custom-fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+                <div class="custom-dialog custom-dialog-centered">
+                    <div class="custom-content">
+                        <div class="custom-header" style="background-color: #fff;">
+                            <h4 class="custom-title" id="formModalLabel">Анкета соискателя АО “Югорский Лесопромышленный Холдинг”</h4>
+                            <button type="button" class="custom-btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="custom-body">
+                            <form action="">
+                                <div class="custom-group">
+                                    <input type="text" class="custom-input" id="name" placeholder="ФИО">
+                                </div>
+                                <div class="custom-group">
+                                    <input type="tel" class="custom-input" id="phone" placeholder="Мобильный телефон">
+                                </div>
+                                <div class="custom-group">
+                                    <input type="email" class="custom-input" id="email" placeholder="E-mail">
+                                </div>
+                                <div class="custom-group">
+                                    <label for="upload" class="custom-label">Прикрепите заполненный файл с резюме</label>
+                                    <input type="file" class="custom-file-input" id="upload">
+                                </div>
+                                <div class="custom-group">
+                                    <input type="text" class="custom-input" id="extra" placeholder="Краткая информация о Вас">
+                                </div>
+                                <div class="custom-check">
+                                    <input type="checkbox" class="custom-check-input" id="consent">
+                                    <label class="custom-check-label" for="consent">Даю согласие на обработку персональных данных</label>
+                                </div>
+                                <button type="button" class="custom-send-btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+            
+   
+            
 
     </main>
     <footer class="footer bg-dark text-white py-4">
