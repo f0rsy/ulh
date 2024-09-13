@@ -2084,6 +2084,11 @@ a:hover {
     margin-left: 20px;
 }
 
+.award-list {
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
 @media (max-width: 992px) {
 
     .modal-dialog {
@@ -2676,5 +2681,10 @@ a:hover {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+
+    .award-list {
+        font-size: 16px;
+        margin-bottom: 60px;
     }
 }

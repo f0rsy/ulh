@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Награды</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <nav class="navbar bg-body-white">
+        <div class="container  d-flex">
+            <a class="navbar-brand-1" href="index.html">
+                <img src="media/icons/logo.svg" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+            <a class="navbar-brand-2" href="index.html">
+                <img src="media/icons/logoSmall.svg" alt="Logo" class="d-inline-block align-text-top">
+            </a>
+            <!-- <div class="dropdown">
+                <button class="butn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    RU
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">RU</a></li>
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                    <li><a class="dropdown-item" href="#">ZH</a></li>
+                </ul>
+            </div> -->
+            <button class="menu-button" data-bs-toggle="modal" data-bs-target="#navigationModal">
+                <span class="menu-text">МЕНЮ</span>
+                <span class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="modal fade" id="navigationModal" tabindex="-1" aria-labelledby="navigationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="media/icons/logoWhite.png" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4 style="margin: 0;">О компании</h4>
+                                <a class="nav-link" href="M&CB.html">Органы управления и контроля</a>
+                                <!-- <a class="nav-link" href="#">История холдинга</a> -->
+                                <a class="nav-link" href="Main activity.html">Основная деятельность</a>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 style="margin: 0;">Персонал</h4>
+                                <a class="nav-link" href="vacancies.html">Вакансии</a>
+                                <a class="nav-link" href="Competitions.html">Конкурсы</a>
+                                <a class="nav-link" href="education.html">Обучение</a>
+                                <a class="nav-link" href="awards.html">Награды</a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="text-light" href="units.html">
+                                    <h4>Подразделения</h4>
+                                </a>
+                                <a class="text-light" href="contacts.html">
+                                    <h4>Контакты</h4>
+                                </a>
+                                <a class="text-light" href="Eco.html">
+                                    <h4>Экология</h4>
+                                </a>
+                                <a class="text-light" href="news.html">
+                                    <h4>Новости</h4>
+                                </a>
+                                <a class="text-light" href="protocolZakup.html">
+                                    <h4>Закупки</h4>
+                                </a>
+                            </div>
+                            <div class="col-md-3">
+                                <a class="text-light" href="kreditOrgaz.html">
+                                    <h4>Кредитным организациям</h4>
+                                </a>
+                                <a class="text-light" href="rascrytieInform.html">
+                                    <h4>Раскрытие информации</h4>
+                                </a>
+                                <a class="text-light" href="sale.html">
+                                    <h4>Реализация активов</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="H1 d-flex">Награды</h1>
+
+            <select name="year" id="selectYear" class="baseSelector">
+                <option value="">Выберите год</option>
+                <option value="2011">2011</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+    
+            <select name="award" id="selectAward" class="baseSelector mt-3">
+                <option value="">Выберите награду</option>
+                <option value="blagodarnost">Благодарность Департамента природных ресурсов и несырьевого сектора экономики ХМАО-Югры</option>
+                <option value="gramota">Почетная грамота Думы ХМАО-Югры</option>
+                <option value="gybernator">Благодарность Губернатора ХМАО-Югры</option>
+                <option value="gramotagub">Почетная грамота Губернатора ХМАО-Югры</option>
+                <option value="pismo">Благодарственное письмо Председателя Думы ХМАО-Югры</option>
+                <option value="trugenik">Заслуженный труженик Югры</option>
+                <option value="lesnou">Почетное звание Заслуженный работник лесной промышленности ХМАО-Югры</option>
+                <option value="transtort">Почетное звание Заслуженный работник транспорта Ханты-Мансийского автономного округа - Югры</option>
+                <option value="leskom">Заслуженный работник лесного комплекса Ханты-Мансийского автономного округа-Югры</option>
+                <option value="ministr">Почетная грамота Министерства промышленности РФ</option>
+                <option value="znak">Знак ХМАО-Югры" "За заслуги перед округом"</option>
+                <option value="econom">Почетное звание Заслуженный экономист ХМАО-Югры</option>
+                <option value="gramotaprom">Почетная грамота Департамента промышленности ХМАО-Югры</option>
+                <option value="depprom">Благодарность Департамента промышленности Ханты-Мансийского автономного округа-Югры</option>
+                <option value="minprom">Почетная грамота Министерства промышленности и торговли  Российской Федерации</option>
+            </select>
+    
+            <div id="awardList" class="award-list">
+                
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center" style="height: 300px;">
+                <div class="col-md-4">
+                    <img src="media/icons/logo.svg" alt="Логотип">
+                </div>
+                <div class="col-md-4">
+                    <p>Телефон: <a href="+7 3467 35-62-73">+7 3467 35-62-73</a></p>
+                    <p>Факс: +7 (3467) 36-30-33</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://yandex.ru/maps/-/CDfuU0lH" target="_blank">
+                        <p class="adress">628011, Россия, Тюменская область, Ханты-Мансийский автономный округ — Югра,
+                            г. Ханты-Мансийск, ул. Рознина, д. 71</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Пример данных (замени на реальные данные)
+        var awardsData = {
+            blagodarnost: {
+                2011: ['Палкин Евгений Александрович'],
+                2013: [],
+                2014: [],
+                2015: ['Галахова Нелля Васильевна', 'Данилишин Михаил Николаевич', 'Степанова Оксана Семёновна'],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: [],
+                2022: [],
+                2023: [],
+                2024: []
+            },
+            gramota: {
+                2011: [],
+                2013: ['Краев Юрий Геннадьевич', 'Степанова Оксана Семёновна'],
+                2014: [],
+                2015: [],
+                2017: ['Сибагатов Набиулла Ибрагимович', 'Таранов Сергей Алексеевич'],
+                2018: ['Данилова Марина Александровна', 'Жаркова Алла Михайловна'],
+                2019: ['Кулинец Нина Михайловна'],
+                2020: ['Надеин Андрей Анатольевич'],
+                2021: [],
+                2022: [],
+                2023: [],
+                2024: []
+            },
+            gybernator: {
+                2011: [],
+                2013: ['Самочёрнов Алексей Сергеевич'],
+                2014: ['Касьянова Оксана Витальевна', 'Лысков Вячеслав Владимирович'],
+                2015: ['Самочёрнов Алексей Сергеевич'],
+                2017: ['Никитенко Татьяна Михайловна'],
+                2018: [],
+                2019: ['Бибиков Сергей Викторович'],
+                2020: ['Ширяев Сергей Николаевич'],
+                2021: [],
+                2022: ['Плебух Наталья Владимировна'],
+                2023: ['Сапаров Анвар Рашидович', 'Сирин Александр Васильевич'],
+                2024: ['Кулакова Юлия Владимировна', 'Лещенко Татьяна Павловна', 'Лугинин Вячеслав Александрович', 'Моисеев Михаил Анатольевич']
+            },
+            gramotagub: {
+                2011: [],
+                2013: [],
+                2014: ['Краев Юрий Геннадьевич'],
+                2015: [],
+                2017: ['Дубова Надежда Афонасьевна', 'Сергеева Наталья Анатольевна'],
+                2018: [],
+                2019: ['Майдан Светлана Николаевна', 'Решетникова Ольга Ивановна'],
+                2020: ['Иванов Сергей Васильевич', 'Альчиков Александр Владимирович'],
+                2021: ['Бондарев Николай Николаевич', 'Дронова Инесса Николаевна'],
+                2022: ['Холманских Василий Александрович', 'Козлов Павел Леонидович', 'Власенко Александр Михайлович', 'Хорошавина Надежда Алексеевна'],
+                2023: [],
+                2024: ['Гизатуллин Тахир Нургаянович', 'Вирашкин Евгений Викторович']
+            },
+            pismo: {
+                2011: [],
+                2013: [],
+                2014: ['Лысков Вячеслав Владимирович', 'Самочёрнов Алексей Сергеевич'],
+                2015: ['Дубова Надежда Афонасьевна'],
+                2017: [],
+                2018: [],
+                2019: ['Перевалов Анатолий Владимирович'],
+                2020: [],
+                2021: [],
+                2022: [],
+                2023: [],
+                2024: ['Соколов Юрий Рафаилович', 'Данилов Сергей Владимирович', 'Шишкин Владимир Николаевич']
+            },
+            trugenik: {
+                2011: [],
+                2013: [],
+                2014: [],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: [],
+                2022: [],
+                2023: ['Дубова Надежда Афонасьевна'],
+                2024: []
+            },
+            lesnou: {
+                2011: [],
+                2013: [],
+                2014: ['Хуснутдинова Фануза Галеевна', 'Данилишин Михаил Николаевич', 'Палкин Евгений Александрович', 'Плебух Яков Михайлович'],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: ['Самочёрнов Алексей Сергеевич'],
+                2021: ['Соколов Юрий Рафаилович', 'Вахрушев Сергей Александрович', 'Ярков Олег Фролович'],
+                2022: [],
+                2023: [],
+                2024: []
+            },
+            transtort: {
+                2011: [],
+                2013: [],
+                2014: ['Ильин Валерий Николаевич'],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: ['Лысков Вячеслав Владимирович', 'Назаров Андрей Владимирович'],
+                2020: [],
+                2021: [],
+                2022: [],
+                2023: [],
+                2024: ['Рыкованов Александр Александрович']
+            },
+            leskom: {
+                2011: [],
+                2013: [],
+                2014: [],
+                2015: [],
+                2017: ['Сергеева Наталья Анатольевна'],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: [],
+                2022: ['Елохов Константин Николаевич'],
+                2023: ['Виноградов Сергей Борисович', 'Анкушин Сергей Алексеевич'],
+                2024: []
+            },
+            ministr: {
+                2011: [],
+                2013: [],
+                2014: [],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: ['Кожевников Юрий Александрович', 'Краев Юрий Геннадьевич'],
+                2022: [],
+                2023: [],
+                2024: []
+            },
+            znak: {
+                2011: [],
+                2013: [],
+                2014: ['Краев Юрий Геннадьевич'],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: [],
+                2022: [],
+                2023: [],
+                2024: []
+            },
+            econom: {
+                2011: [],
+                2013: [],
+                2014: [],
+                2015: ['Степанова Оксана Семёновна'],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: [],
+                2022: [],
+                2023: [],
+                2024: []
+            },
+            gramotaprom: {
+                2011: [],
+                2013: [],
+                2014: [],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: ['Дорофеев Юрий Владимирович', 'Перовская Ольга Петровна', 'Солдаткин Сергей Николаевич', 'Елохов Владимир Иванович', 'Кораблев Игорь Сергеевич', 'Вахрушев Алексей Сергеевич'],
+                2022: ['Лещенко Татьяна Павловна', 'Синявская Татьяна Геннадьевна', 'Таскаев Николай Дмитриевич', 'Немчанов Евгений Васильевич', 'Дойлидов Василий Иванович', 'Заусалин Владимир Николаевич', 'Минибаев Эльнар Раилевич', 'Арсенов Александр Александрович'],
+                2023: [],
+                2024: []
+            },
+            depprom: {
+                2011: [],
+                2013: [],
+                2014: [],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: ['Стёжин Константин Андреевич'],
+                2022: ['Барышев Виктор Анатольевич', 'Лемешко Андрей Владимирович'],
+                2023: [],
+                2024: []
+            },
+            minprom: {
+                2011: [],
+                2013: [],
+                2014: [],
+                2015: [],
+                2017: [],
+                2018: [],
+                2019: [],
+                2020: [],
+                2021: [],
+                2022: ['Палкин Евгений Александрович', 'Плебух Яков Михайлович'],
+                2023: ['Сакк Татьяна Петровна', 'Данилишин Михаил Николаевич'],
+                2024: []
+            },
+            
+        };
+
+        // Слушаем изменения в обоих селектах
+        document.getElementById('selectYear').addEventListener('change', updateAwardList);
+        document.getElementById('selectAward').addEventListener('change', updateAwardList);
+
+        function updateAwardList() {
+            var selectedYear = document.getElementById('selectYear').value;
+            var selectedAward = document.getElementById('selectAward').value;
+            var awardList = document.getElementById('awardList');
+
+            awardList.innerHTML = ''; // Очистить список перед добавлением
+
+            // Проверяем, выбраны ли и год, и награда
+            if (selectedYear && selectedAward && awardsData[selectedAward][selectedYear]) {
+                var awards = awardsData[selectedAward][selectedYear];
+                if (awards.length > 0) {
+                    awards.forEach(function(person) {
+                        var listItem = document.createElement('div');
+                        listItem.textContent = person;
+                        awardList.appendChild(listItem);
+                    });
+                } else {
+                    awardList.textContent = 'Награды в выбранном году отсутствуют';
+                }
+            } else {
+                awardList.textContent = 'Выберите год и награду для отображения списка награждённых.';
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
