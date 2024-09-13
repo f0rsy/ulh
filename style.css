@@ -203,14 +203,16 @@ a {
 .photo-containerLong {
     position: relative;
     width: 100%;
-    height: 700px;
+    height: auto;
     overflow: hidden;
 }
 
 .photo-containerLong img {
-    height: 700px;
     width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
 
 .video-container {
     position: relative;
@@ -2655,5 +2657,24 @@ a:hover {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .photo-containerLong {
+        height: 300px;
+    }
+    
+    .photo-containerLong img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .backButton {
+        position: unset;
+    }
+
+    .overlayUnits {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
