@@ -1289,13 +1289,66 @@ input::-webkit-file-upload-button:hover {
 
 .realizActive {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .realizCards {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spec {
+    background-color: white;
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 18px;
+    color: var(--green);
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+.spec:hover {
+    background-color: var(--green);
+    color: white;
+    border-color: var(--yellow);
+}
+
+.contact {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 .realizItem {
@@ -1310,6 +1363,9 @@ input::-webkit-file-upload-button:hover {
     transition: 300ms;
     margin-right: 15px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 .realizItem:hover {
@@ -1318,14 +1374,19 @@ input::-webkit-file-upload-button:hover {
 
 .realizItem img {
     width: 100%;
+    border-radius: 10px;
 }
+
 .realizItem h4 {
     font-size: 19px;
-    margin: 35px 0;
+    margin: 20px 0;
 }
+
 .realizItem p {
     font-size: 16px;
+    margin-bottom: 10px; /* Немного меньшее расстояние */
 }
+
 .price {
     background-color: var(--yellow);
     color: black;
@@ -1334,8 +1395,11 @@ input::-webkit-file-upload-button:hover {
     padding: 10px 36px;
     border-radius: 24px;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: auto; 
+    text-align: center;
+    box-sizing: border-box;
 }
+
 
 
 
@@ -2734,5 +2798,18 @@ a:hover {
     .award-list {
         font-size: 16px;
         margin-bottom: 60px;
+    }
+
+    .realizActive {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .realizCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
