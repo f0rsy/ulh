@@ -1486,6 +1486,7 @@ input::-webkit-file-upload-button:hover {
 }
 
 .product-image {
+    height: 490px;
     width: 100%;
     border-radius: 10px;
     cursor: pointer;
