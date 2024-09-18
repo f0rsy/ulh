@@ -106,12 +106,14 @@
             <h2>Реализация активов</h2>
             <div class="realizActive">
                 <div class="realizCards">
-                    <div class="realizItem" data-category="transport">
-                        <img src="media/img/realizActive/kamaz.jpg" alt="">
-                        <h4>КАМАЗ 6520 Самосвал</h4>
-                        <p>ХМАО-Югра, г. Советский</p>
-                        <div class="price">500 000 ₽</div>
-                    </div>
+                    <a href="realizeActiveItems/kamaz.html">
+                        <div class="realizItem" data-category="transport">
+                            <img src="media/img/realizActive/kamaz.jpg" alt="">
+                            <h4>КАМАЗ 6520 Самосвал</h4>
+                            <p>ХМАО-Югра, г. Советский</p>
+                            <div class="price">500 000 ₽</div>
+                        </div>
+                    </a>
                     <div class="realizItem" data-category="equipment">
                         <img src="media/img/realizActive/peskobryiz.png" alt="" >
                         <h4>Пескоразбрасывающее быстросъемное оборудование</h4>
@@ -226,17 +228,14 @@
         </div>
     </footer>
     <script>
-        // Функция для сортировки карточек
         function filterCards(category) {
             const items = document.querySelectorAll('.realizItem');
 
-            // Если выбрана категория 'all', показываем все карточки
             if (category === 'all') {
                 items.forEach(item => {
                     item.style.display = 'flex';
                 });
             } else {
-                // Перебираем все карточки и скрываем те, что не соответствуют выбранной категории
                 items.forEach(item => {
                     if (item.getAttribute('data-category') === category) {
                         item.style.display = 'flex';
@@ -246,14 +245,9 @@
                 });
             }
         }
-
-        // Добавляем обработчики событий на кнопки
         document.querySelectorAll('.spec').forEach(button => {
             button.addEventListener('click', function () {
-                // Получаем категорию из кнопки
                 const category = this.getAttribute('data-category');
-
-                // Вызываем функцию сортировки по выбранной категории
                 filterCards(category);
             });
         });

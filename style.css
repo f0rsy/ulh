@@ -1296,11 +1296,13 @@ input::-webkit-file-upload-button:hover {
 .realizCards {
     display: flex;
     flex-wrap: wrap;
+    width: 90%;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
 
 .sort {
@@ -1399,6 +1401,121 @@ input::-webkit-file-upload-button:hover {
     text-align: center;
     box-sizing: border-box;
 }
+
+.left-section {
+    display: flex;
+    width: 60%;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    border-radius: 50px;
+    width: 387px;
+    height: 60px;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+}
+
+.imgButton {
+    margin-right: 30px;
+}
+
+.right-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.right-section h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contacts p {
+    margin-bottom: 10px;
+}
+
+.documents h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.docs-grid div {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* Увеличиваем для всех слайдов */
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Кнопки навигации слайдера */
+button.prev-slide, button.next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Убедимся, что кнопки выше других элементов */
+}
+
+button.prev-slide {
+    left: 10px;
+}
+
+button.next-slide {
+    right: 10px;
+}
+
+button.prev-slide:hover, button.next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Немного темнее при наведении */
+}
+
 
 
 
