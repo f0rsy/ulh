@@ -1517,7 +1517,20 @@ button.prev-slide:hover, button.next-slide:hover {
     background-color: rgba(0, 0, 0, 0.8); /* Немного темнее при наведении */
 }
 
-
+.message {
+    display: none; /* Скрываем по умолчанию */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
 
 
 

@@ -145,33 +145,41 @@
             </div>
             <h4>Или заполните ниже форму обратной связи</h4>
             <button type="button" class="openButton" onclick="openForm()">Заполнить</button>
+            <div id="success-message" class="message success">Ваша заявка успешно отправлена!</div>
+            <div id="error-message" class="message error">Произошла ошибка при отправке заявки. Пожалуйста,
+                попробуйте снова.</div>
+            <div id="invalid-file-message" class="message error">Недопустимый формат файла. Разрешены только
+                PDF, DOC, DOCX.</div>
+            <div id="upload-error-message" class="message error">Ошибка загрузки файла. Пожалуйста, попробуйте
+                снова.</div>
             <div class="custom-form-container" id="formContainer" style="display: none;">
                 <div class="anket">
                     <button type="button" class="custom-btn-close" onclick="closeForm()">&#10006;</button>
                     <h4 class="form-title">Анкета соискателя "АО Югорский Лесопромышленный Холдинг"</h4>
-                    <form>
+                    <form method="POST" action="send.php" enctype="multipart/form-data">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="ФИО *">
+                            <input type="text" name="fullname" class="form-control" placeholder="ФИО *" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Мобильный телефон *">
+                            <input type="tel" name="phone" class="form-control" placeholder="Мобильный телефон *"
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="E-mail *">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail *" required>
                         </div>
                         <div class="form-group">
                             <label for="upload" class="form-label">Прикрепите заполненный файл с резюме *</label>
-                            <input type="file" class="form-control-file" id="upload">
+                            <input type="file" name="resume" class="form-control-file" id="upload" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Краткая информация о Вас">
+                            <input type="text" name="info" class="form-control" placeholder="Краткая информация о Вас">
                         </div>
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="consent">
+                            <input type="checkbox" name="consent" class="form-check-input" id="consent" required>
                             <label class="form-check-label" for="consent">Даю согласие на обработку персональных
                                 данных</label>
                         </div>
-                        <button type="button" class="sendButton">Отправить</button>
+                        <button type="submit" class="sendButton">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -196,6 +204,27 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Получаем параметры из URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Если есть параметр success=1, показываем сообщение об успешной отправке
+        if (urlParams.has('success')) {
+            document.getElementById('success-message').style.display = 'block';
+        }
+
+        // Если есть параметр error=1, показываем сообщение об ошибке
+        if (urlParams.has('error')) {
+            const errorCode = urlParams.get('error');
+            if (errorCode === '1') {
+                document.getElementById('error-message').style.display = 'block';
+            } else if (errorCode === '2') {
+                document.getElementById('invalid-file-message').style.display = 'block';
+            } else if (errorCode === '3') {
+                document.getElementById('upload-error-message').style.display = 'block';
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
