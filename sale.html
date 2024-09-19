@@ -264,37 +264,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        function filterCards(category) {
-            const items = document.querySelectorAll('.realizItem');
-
-            if (category === 'all') {
-                items.forEach(item => {
-                    item.style.display = 'flex';
-                });
-            } else {
-                items.forEach(item => {
-                    if (item.getAttribute('data-category') === category) {
-                        item.style.display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            }
-        }
-        document.querySelectorAll('.spec').forEach(button => {
-            button.addEventListener('click', function () {
-                const category = this.getAttribute('data-category');
-                filterCards(category);
-            });
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="script.js"></script>
+    <script src="js/sale.js"></script>
 </body>
 
 </html>

@@ -111,10 +111,12 @@
                         <div class="slider-container">
                             <button class="prev-slide">&#10094;</button>
                             <div class="slider-wrapper">
-                                <img src="../media/img/realizActive/lepistok/lepistok.jpg" alt="Пескоразбрасывающее быстросъемное оборудование"
-                                    class="product-image" onclick="openFullScreen(this)">
-                                <img src="../media/img/realizActive/lepistok/lepistok1.jpg" alt="Пескоразбрасывающее быстросъемное оборудование"
-                                    class="product-image" onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/lepistok/lepistok.jpg"
+                                    alt="Пескоразбрасывающее быстросъемное оборудование" class="product-image"
+                                    onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/lepistok/lepistok1.jpg"
+                                    alt="Пескоразбрасывающее быстросъемное оборудование" class="product-image"
+                                    onclick="openFullScreen(this)">
                             </div>
                             <button class="next-slide">&#10095;</button>
                         </div>
@@ -123,14 +125,28 @@
                     </div>
                     <div class="descriptionItem">
                         <h4>Описание:</h4>
-                        <p>Лепестковая просеивающая машина VST 800/2200. 2016 г.в., новая в упаковке. Длина просеивания 2200 мм., ширина просеивания 800 мм.,  Диаметр лепесткового сегмента 256 мм., число оборотов просеивания прибл. 100 об/мин., градация деления на фракции прибл. 50 мм., число просеивающих валов 11 шт, производительность просеивания прибл. 120 куб.м./час,  количество просеивающих сегментов 2 шт., приводная мощность на каждый сегмент 3 кВт, Рабочее напряжение 400 В, частота 50 Гц.
+                        <p>Лепестковая просеивающая машина VST 800/2200. 2016 г.в., новая в упаковке. Длина просеивания
+                            2200 мм., ширина просеивания 800 мм., Диаметр лепесткового сегмента 256 мм., число оборотов
+                            просеивания прибл. 100 об/мин., градация деления на фракции прибл. 50 мм., число
+                            просеивающих валов 11 шт, производительность просеивания прибл. 120 куб.м./час, количество
+                            просеивающих сегментов 2 шт., приводная мощность на каждый сегмент 3 кВт, Рабочее напряжение
+                            400 В, частота 50 Гц.
 
                             Комплектация:
-                            
-                                Просеивающий сегмент, корпус из оребренной листовой стали с пазами для просеивающих валов, подшипники и приводной блок, с контрфланцем на выпускном отверстии для мелкой фракции с нижней стороны. Легко снимаемая облицовка позволяет удобно и оперативно производить осмотр и техническое обслуживание при останове машины.
-                                Просеивающие валы модульной конструкции с эластичными лепестками из полиуретана для избегания заклинивания. Просеивающие валы с фланцевыми подшипниками и цепной звездочкой образуют узел и могут быть демонтированы по отдельности.
-                                Привод просеивающих валов с роликовой цепью и мотором-редуктором имеется на каждом сегменте. На каждой приводной станции установлен датчик контроля вращения.  Автоматическая смазка подшипников осуществляется благодаря непрерывному лубрикатору и обеспечивает их длительный срок службы и высокую эксплуатационную готовность.
-                                Выпускное отверстие для крупных включений оснащено закрытым желобом с широким ревизионным люком и фланцевой рамой.</p>
+
+                            Просеивающий сегмент, корпус из оребренной листовой стали с пазами для просеивающих валов,
+                            подшипники и приводной блок, с контрфланцем на выпускном отверстии для мелкой фракции с
+                            нижней стороны. Легко снимаемая облицовка позволяет удобно и оперативно производить осмотр и
+                            техническое обслуживание при останове машины.
+                            Просеивающие валы модульной конструкции с эластичными лепестками из полиуретана для
+                            избегания заклинивания. Просеивающие валы с фланцевыми подшипниками и цепной звездочкой
+                            образуют узел и могут быть демонтированы по отдельности.
+                            Привод просеивающих валов с роликовой цепью и мотором-редуктором имеется на каждом сегменте.
+                            На каждой приводной станции установлен датчик контроля вращения. Автоматическая смазка
+                            подшипников осуществляется благодаря непрерывному лубрикатору и обеспечивает их длительный
+                            срок службы и высокую эксплуатационную готовность.
+                            Выпускное отверстие для крупных включений оснащено закрытым желобом с широким ревизионным
+                            люком и фланцевой рамой.</p>
                         <p>Адрес: ХМАО-Югра, г. Советский</p>
                     </div>
                 </div>
@@ -181,50 +197,8 @@
             </div>
         </div>
     </footer>
-    <script>
-
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slider-wrapper img');
-        const totalSlides = slides.length;
-
-        // Show the current slide
-        function showSlide(index) {
-            const sliderWrapper = document.querySelector('.slider-wrapper');
-            const slideWidth = slides[0].clientWidth;
-            sliderWrapper.style.transform = `translateX(${-index * slideWidth}px)`;
-        }
-
-        // Next Slide
-        document.querySelector('.next-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Previous Slide
-        document.querySelector('.prev-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Fullscreen Image Functionality
-        function openFullScreen(image) {
-            const modal = document.getElementById("fullscreenModal");
-            const modalImg = document.getElementById("fullscreenImage");
-            modal.style.display = "flex";
-            modalImg.src = image.src;
-        }
-
-        function closeFullScreen() {
-            const modal = document.getElementById("fullscreenModal");
-            modal.style.display = "none";
-        }
-
-    </script>
+    <script src="../js/realizeActive.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>

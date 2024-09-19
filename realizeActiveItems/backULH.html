@@ -107,18 +107,13 @@
             <div class="sections">
                 <div class="left-section">
                     <div class="imgButton">
-                        <img src="../media/img/realizActive/backULH/backULH.png" alt=""
-                                    class="product-image">
-
-                        <button class="submit-btn">Подать заявку</button>
-
-                        <h2>Документы</h2>
-
-                        <div>
-                            <a href="../documents/backULH/69d5b9973a5db1536a8398a06746a9c5.xls"
-                                target="_blank" class="file">Продажа запчастей Ивеко Камаз Уаз.xls</a>
+                        <div class="slider-container">
+                            <div class="slider-wrapper">
+                                <img src="../media/img/realizActive/backULH/backULH.png" alt="" class="product-image"
+                                    onclick="openFullScreen(this)">
+                            </div>
                         </div>
-
+                        <button class="submit-btn">Подать заявку</button>
                     </div>
                     <div class="descriptionItem">
                         <h4>Описание:</h4>
@@ -144,10 +139,11 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="documents">
+            <div class="documents">
                 <h3>Документы</h3>
-
-            </div> -->
+                <a href="../documents/backULH/69d5b9973a5db1536a8398a06746a9c5.xls" target="_blank" class="file">Продажа
+                    запчастей Ивеко Камаз Уаз.xls</a>
+            </div>
         </div>
         <div id="fullscreenModal" class="fullscreen-modal" onclick="closeFullScreen()">
             <span class="close-btn" onclick="closeFullScreen()">&times;</span>
@@ -173,50 +169,8 @@
             </div>
         </div>
     </footer>
-    <script>
-
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slider-wrapper img');
-        const totalSlides = slides.length;
-
-        // Show the current slide
-        function showSlide(index) {
-            const sliderWrapper = document.querySelector('.slider-wrapper');
-            const slideWidth = slides[0].clientWidth;
-            sliderWrapper.style.transform = `translateX(${-index * slideWidth}px)`;
-        }
-
-        // Next Slide
-        document.querySelector('.next-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Previous Slide
-        document.querySelector('.prev-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Fullscreen Image Functionality
-        function openFullScreen(image) {
-            const modal = document.getElementById("fullscreenModal");
-            const modalImg = document.getElementById("fullscreenImage");
-            modal.style.display = "flex";
-            modalImg.src = image.src;
-        }
-
-        function closeFullScreen() {
-            const modal = document.getElementById("fullscreenModal");
-            modal.style.display = "none";
-        }
-
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="../js/realizeActive.js"></script>
 </body>
 
 </html>

@@ -31,16 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mail->isSMTP();                                           // Устанавливаем использование SMTP
                 $mail->Host       = 'smtp.yandex.ru';                      // SMTP сервер
                 $mail->SMTPAuth   = true;                                  // Включаем SMTP аутентификацию
-                $mail->Username   = 'nikfirstmarch2006@yandex.ru';         // Логин SMTP (ваш email)
-                $mail->Password   = 'sykdotlzitacgonq';                    // SMTP пароль
+                $mail->Username   = 'aoULH@yandex.ru';         // Логин SMTP (ваш email)
+                $mail->Password   = 'ifjouekzixrcxwtx';                    // SMTP пароль
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           // Шифрование SSL
                 $mail->Port       = 465;                                   // Порт для SSL
             
                 // От кого письмо
-                $mail->setFrom('nikfirstmarch2006@yandex.ru', 'redy');
+                $mail->setFrom('aoULH@yandex.ru', 'redy');
             
                 // Кому отправить
-                $mail->addAddress('nikfirstmarch2006@gmail.com', 'Recipient Name');  // Адрес получателя
+                $mail->addAddress('rezjume@ugratimber.ru', 'Recipient Name');  // Адрес получателя
                 $mail->addAttachment($fileTmpPath, $fileName);
 
                 // Содержание письма

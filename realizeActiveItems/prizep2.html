@@ -179,50 +179,8 @@
             </div>
         </div>
     </footer>
-    <script>
-
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slider-wrapper img');
-        const totalSlides = slides.length;
-
-        // Show the current slide
-        function showSlide(index) {
-            const sliderWrapper = document.querySelector('.slider-wrapper');
-            const slideWidth = slides[0].clientWidth;
-            sliderWrapper.style.transform = `translateX(${-index * slideWidth}px)`;
-        }
-
-        // Next Slide
-        document.querySelector('.next-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Previous Slide
-        document.querySelector('.prev-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Fullscreen Image Functionality
-        function openFullScreen(image) {
-            const modal = document.getElementById("fullscreenModal");
-            const modalImg = document.getElementById("fullscreenImage");
-            modal.style.display = "flex";
-            modalImg.src = image.src;
-        }
-
-        function closeFullScreen() {
-            const modal = document.getElementById("fullscreenModal");
-            modal.style.display = "none";
-        }
-
-    </script>
+    <script src="../js/realizeActive.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>

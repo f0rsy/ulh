@@ -111,33 +111,21 @@
                         <div class="slider-container">
                             <button class="prev-slide">&#10094;</button>
                             <div class="slider-wrapper">
-                                <img src="../media/img/realizActive/harvest2/harvest.jfif" alt=""
-                                    class="product-image" onclick="openFullScreen(this)">
-                                <img src="../media/img/realizActive/harvest2/harvest1.jfif" alt=""
-                                    class="product-image" onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/harvest2/harvest.jfif" alt="" class="product-image"
+                                    onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/harvest2/harvest1.jfif" alt="" class="product-image"
+                                    onclick="openFullScreen(this)">
                             </div>
                             <button class="next-slide">&#10095;</button>
                         </div>
-
                         <button class="submit-btn">Подать заявку</button>
-
-                        <h2>Документы</h2>
-
-                        <div class="col-md-6">
-                            <a href="../documents/harvest2/b0f7c25840e114c9dbfc4481b548033e.pdf"
-                                target="_blank" class="file">1776.pdf</a>
-                            <br>
-                            <a href="../documents/harvest2/05629d373fe41d190d1fd032c77fb0d2.pptx" target="_blank"
-                                class="file">Дефектная ведомость.pptx</a>
-                        </div>
-
                     </div>
                     <div class="descriptionItem">
                         <h4>Описание:</h4>
-                        <p>Харвестер на базе экскаватора VOLVO EC210BF PRIME, 2012 г.в., 
-                            харвестерная головка Log Max 6000. Наработка 25262 м/ч. 
-                            Требуется техническое обслуживание.  
-                            Возможно предоставление дефектной ведомости по 
+                        <p>Харвестер на базе экскаватора VOLVO EC210BF PRIME, 2012 г.в.,
+                            харвестерная головка Log Max 6000. Наработка 25262 м/ч.
+                            Требуется техническое обслуживание.
+                            Возможно предоставление дефектной ведомости по
                             результатам осмотра произведенного официальным дилером.</p>
                         <p>Адрес: ХМАО-Югра, г. Советский</p>
                         <div class="price">5 600 000 ₽</div>
@@ -161,10 +149,14 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="documents">
+            <div class="documents">
                 <h3>Документы</h3>
-
-            </div> -->
+                <a href="../documents/harvest2/b0f7c25840e114c9dbfc4481b548033e.pdf" target="_blank"
+                    class="file">1776.pdf</a>
+                <br>
+                <a href="../documents/harvest2/05629d373fe41d190d1fd032c77fb0d2.pptx" target="_blank"
+                    class="file">Дефектная ведомость.pptx</a>
+            </div>
         </div>
         <div id="fullscreenModal" class="fullscreen-modal" onclick="closeFullScreen()">
             <span class="close-btn" onclick="closeFullScreen()">&times;</span>
@@ -190,50 +182,8 @@
             </div>
         </div>
     </footer>
-    <script>
-
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slider-wrapper img');
-        const totalSlides = slides.length;
-
-        // Show the current slide
-        function showSlide(index) {
-            const sliderWrapper = document.querySelector('.slider-wrapper');
-            const slideWidth = slides[0].clientWidth;
-            sliderWrapper.style.transform = `translateX(${-index * slideWidth}px)`;
-        }
-
-        // Next Slide
-        document.querySelector('.next-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Previous Slide
-        document.querySelector('.prev-slide').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            showSlide(currentSlide);
-        });
-
-        // Fullscreen Image Functionality
-        function openFullScreen(image) {
-            const modal = document.getElementById("fullscreenModal");
-            const modalImg = document.getElementById("fullscreenImage");
-            modal.style.display = "flex";
-            modalImg.src = image.src;
-        }
-
-        function closeFullScreen() {
-            const modal = document.getElementById("fullscreenModal");
-            modal.style.display = "none";
-        }
-
-    </script>
+    <script src="../js/realizeActive.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>

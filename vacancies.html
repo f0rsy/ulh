@@ -204,33 +204,8 @@
             </div>
         </div>
     </footer>
-    <script>
-        // Получаем параметры из URL
-        const urlParams = new URLSearchParams(window.location.search);
-
-        // Если есть параметр success=1, показываем сообщение об успешной отправке
-        if (urlParams.has('success')) {
-            document.getElementById('success-message').style.display = 'block';
-        }
-
-        // Если есть параметр error=1, показываем сообщение об ошибке
-        if (urlParams.has('error')) {
-            const errorCode = urlParams.get('error');
-            if (errorCode === '1') {
-                document.getElementById('error-message').style.display = 'block';
-            } else if (errorCode === '2') {
-                document.getElementById('invalid-file-message').style.display = 'block';
-            } else if (errorCode === '3') {
-                document.getElementById('upload-error-message').style.display = 'block';
-            }
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="script.js"></script>
+    <script src="js/vacancies.js"></script>
 </body>
 
 </html>

@@ -27,12 +27,17 @@ body {
     font-family: MontserratReg;
 }
 
+main {
+    margin-top: 50px;
+}
+
 a {
     text-decoration: none;
 }
 
 .navbar {
-    height: 150px;
+    height: 120px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .navbar-brand-1 {
@@ -1123,12 +1128,12 @@ input::-webkit-file-upload-button:hover {
 }
 
 .form-control {
-    outline: none; 
+    outline: none;
 }
 
 .form-control:focus {
-    outline: none; 
-    box-shadow: none; 
+    outline: none;
+    box-shadow: none;
     border-bottom: 3px solid var(--green);
 }
 
@@ -1367,7 +1372,7 @@ input::-webkit-file-upload-button:hover {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .realizItem:hover {
@@ -1386,7 +1391,8 @@ input::-webkit-file-upload-button:hover {
 
 .realizItem p {
     font-size: 16px;
-    margin-bottom: 10px; /* Немного меньшее расстояние */
+    margin-bottom: 10px;
+    /* Немного меньшее расстояние */
 }
 
 .price {
@@ -1397,7 +1403,7 @@ input::-webkit-file-upload-button:hover {
     padding: 10px 36px;
     border-radius: 24px;
     display: inline-block;
-    margin-top: auto; 
+    margin-top: auto;
     text-align: center;
     box-sizing: border-box;
 }
@@ -1410,12 +1416,7 @@ input::-webkit-file-upload-button:hover {
 .sections {
     display: flex;
     justify-content: space-between;
-}
-
-.product-image {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .description h2 {
@@ -1455,6 +1456,10 @@ input::-webkit-file-upload-button:hover {
     margin-bottom: 10px;
 }
 
+.documents {
+    margin-bottom: 20px;
+}
+
 .documents h3 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -1475,25 +1480,25 @@ input::-webkit-file-upload-button:hover {
 
 .slider-container {
     position: relative;
-    width: 100%;
+    width: 390px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%; /* Увеличиваем для всех слайдов */
 }
 
 .product-image {
-    height: 490px;
     width: 100%;
     border-radius: 10px;
     cursor: pointer;
+    object-fit: cover;
 }
 
-/* Кнопки навигации слайдера */
-button.prev-slide, button.next-slide {
+button.prev-slide,
+button.next-slide {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1502,7 +1507,7 @@ button.prev-slide, button.next-slide {
     border: none;
     padding: 10px;
     cursor: pointer;
-    z-index: 10; /* Убедимся, что кнопки выше других элементов */
+    z-index: 10;
 }
 
 button.prev-slide {
@@ -1513,20 +1518,54 @@ button.next-slide {
     right: 10px;
 }
 
-button.prev-slide:hover, button.next-slide:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Немного темнее при наведении */
+button.prev-slide:hover,
+button.next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Немного темнее при наведении */
+}
+
+/* Fullscreen Modal */
+.fullscreen-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-modal img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .message {
-    display: none; /* Скрываем по умолчанию */
+    display: none;
+    /* Скрываем по умолчанию */
     padding: 15px;
     margin: 15px 0;
     border-radius: 5px;
 }
+
 .message.success {
     background-color: #d4edda;
     color: #155724;
 }
+
 .message.error {
     background-color: #f8d7da;
     color: #721c24;
@@ -2351,7 +2390,7 @@ a:hover {
     }
 
     .modal-header img {
-        width: 250px; 
+        width: 250px;
         height: 60px;
     }
 
@@ -2360,17 +2399,17 @@ a:hover {
     }
 
     .modal-body h4 {
-        font-size: 20px; 
+        font-size: 20px;
         margin-bottom: 20px;
     }
 
     .nav-link {
-        font-size: 18px; 
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
     .col-md-3 {
-        width: 100%; 
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -2850,7 +2889,7 @@ a:hover {
     .x-axis-labels {
         padding-top: 5px;
         justify-content: space-around;
-    
+
     }
 
     .text-container ul li span {
@@ -2885,11 +2924,15 @@ a:hover {
         width: 90%;
     }
 
-    .H3_eco  {
+    .H3_eco {
         font-size: 18px;
     }
 
-    .plita_text, .under_H1, .text-container, .p_eco, .information{
+    .plita_text,
+    .under_H1,
+    .text-container,
+    .p_eco,
+    .information {
         font-size: 16px;
     }
 
@@ -2910,7 +2953,7 @@ a:hover {
     .photo-containerLong {
         height: 300px;
     }
-    
+
     .photo-containerLong img {
         width: 100%;
         height: 300px;
