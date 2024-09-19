@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Пескоразбрасывающее быстросъемное оборудование</title>
+    <title>Харвестер VOLVO</title>
     <link rel="icon" href="../media/img/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -103,20 +103,51 @@
     </header>
     <main>
         <div class="container">
-            <h2>Пескоразбрасывающее быстросъемное оборудование</h2>
+            <h2>Харвестер VOLVO</h2>
             <div class="sections">
                 <div class="left-section">
                     <div class="imgButton">
-                        <img src="../media/img/realizActive/peskobryiz/peskobryiz.png" alt=""
-                                    class="product-image">
+                        <!-- Slider Container -->
+                        <div class="slider-container">
+                            <button class="prev-slide">&#10094;</button>
+                            <div class="slider-wrapper">
+                                <img src="../media/img/realizActive/harvest1/harvest.jfif" alt=""
+                                    class="product-image" onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/harvest1/harvest1.jfif" alt=""
+                                    class="product-image" onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/harvest1/harvest2.jfif" alt=""
+                                    class="product-image" onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/harvest1/harvest3.jfif" alt=""
+                                    class="product-image" onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/harvest1/harvest4.jfif" alt=""
+                                    class="product-image" onclick="openFullScreen(this)">
+                                <img src="../media/img/realizActive/harvest1/harvest5.jpeg" alt=""
+                                    class="product-image" onclick="openFullScreen(this)">
+                            </div>
+                            <button class="next-slide">&#10095;</button>
+                        </div>
+
+                        <button class="submit-btn" onclick="openForm()">Подать заявку</button>
                         
-                        <button class="submit-btn">Подать заявку</button>
+                        <h2>Документы</h2>
+
+                        <div class="col-md-6">
+                            <a href="../documents/harvest1/417a243e55234d98221317f8dd8e7105.pdf"
+                                target="_blank" class="file">1474.pdf</a>
+                            <br>
+                            <a href="../documents/harvest1/06b8701a26418ef671c7fc20059f6186.ppt" target="_blank"
+                                class="file">Инспекция EC210BF 19443.ppt </a>
+                        </div>
+
                     </div>
                     <div class="descriptionItem">
                         <h4>Описание:</h4>
-                        <p>6 куб.м. , без гидромотора.</p>
+                        <p>Харвестер на базе экскаватора VOLVO EC210BLC FOREST, 2007 г.в., 
+                            харвестерная головка Log Max 6000, 2012 г.в.. Наработка 32907 м/ч. 
+                            Требуется техническое обслуживание.
+                            Возможно предоставление дефектной ведомости по результатам осмотра произведенного официальным дилером.</p>
                         <p>Адрес: ХМАО-Югра, г. Советский</p>
-                        <div class="price">300 000 ₽</div>
+                        <div class="price">5 300 000 ₽</div>
                     </div>
                 </div>
 
@@ -166,6 +197,7 @@
             </div>
         </div>
     </footer>
+
     <script>
 
         let currentSlide = 0;
