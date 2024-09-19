@@ -123,7 +123,47 @@
                             <button class="next-slide">&#10095;</button>
                         </div>
 
-                        <button class="submit-btn">Подать заявку</button>
+                        <button type="button" class="submit-btn" onclick="openForm()">Подать заявку</button>
+                        <div id="success-message" class="message success">Ваша заявка успешно отправлена!</div>
+                        <div id="error-message" class="message error">Произошла ошибка при отправке заявки. Пожалуйста,
+                            попробуйте снова.</div>
+                        <div id="invalid-file-message" class="message error">Недопустимый формат файла. Разрешены только
+                            PDF, DOC, DOCX.</div>
+                        <div id="upload-error-message" class="message error">Ошибка загрузки файла. Пожалуйста,
+                            попробуйте
+                            снова.</div>
+                        <div class="custom-form-container" id="formContainer" style="display: none;">
+                            <div class="anket">
+                                <button type="button" class="custom-btn-close" onclick="closeForm()">&#10006;</button>
+                                <h4 class="form-title">Подача Заявки на покупку реализуемых активов</h4>
+                                <form method="POST" action="../sendRealize.php" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <input type="text" name="fullname" class="form-control" placeholder="ФИО *"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" class="form-control"
+                                            placeholder="Мобильный телефон *" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="E-mail *"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="item" class="form-control" placeholder="Что вы хотите приобрести?"
+                                            required>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" name="consent" class="form-check-input" id="consent"
+                                            required>
+                                        <label class="form-check-label" for="consent">Даю согласие на обработку
+                                            персональных
+                                            данных</label>
+                                    </div>
+                                    <button type="submit" class="sendButton">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <div class="descriptionItem">
                         <h4>Описание:</h4>
@@ -180,6 +220,7 @@
         </div>
     </footer>
     <script src="../js/realizeActive.js"></script>
+    <script src="../js/vacancies.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
