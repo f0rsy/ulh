@@ -27,3 +27,53 @@
             document.getElementById("formContainer").style.display = "none";
         }
         
+
+
+
+
+
+        const ogrn = '1048600000492'; // ОГРН компании
+        const selectElement = document.getElementById('vacancy');
+
+        // Функция для получения вакансий по ОГРН
+        async function fetchVacanciesByOgrn(ogrn) {
+            try {
+                const response = await fetch(`http://opendata.trudvsem.ru/api/v1/vacancies/company/ogrn/${ogrn}`);
+                const data = await response.json();
+                
+                console.log('Ответ API:', data); // Отображаем ответ API в консоли
+
+                if (data && data.results && data.results.vacancies.length > 0) {
+                    populateVacancies(data.results.vacancies);
+                } else {
+                    console.log('Вакансии не найдены для этого ОГРН');
+                }
+            } catch (error) {
+                console.error('Ошибка при получении вакансий:', error);
+            }
+        }
+
+        // Функция для добавления вакансий в выпадающий список
+        function populateVacancies(vacancies) {
+            vacancies.forEach(vacancy => {
+                const option = document.createElement('option');
+                option.value = vacancy['vacancy']['vac_url']; // URL вакансии в качестве значения
+                option.textContent = vacancy['vacancy']['job-name']; // Название вакансии для отображения
+                selectElement.appendChild(option);
+            });
+
+            console.log('Добавлены вакансии:', vacancies); // Отображаем список вакансий в консоли
+        }
+
+        // Вызов функции для получения вакансий при загрузке страницы
+        window.onload = () => {
+            fetchVacanciesByOgrn(ogrn);
+        };
+
+        // Обработчик изменения значения в select
+        selectElement.addEventListener('change', function() {
+            const selectedUrl = this.value; // Получаем URL из value выбранного option
+            if (selectedUrl) {
+                window.open(selectedUrl, '_blank'); // Открываем ссылку в новой вкладке
+            }
+        });
