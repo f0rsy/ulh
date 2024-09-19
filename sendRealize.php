@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom('aoULH@yandex.ru', 'redy');
 
         // Кому отправить
-        $mail->addAddress('os@ugratimber.ru', 'Recipient Name');  // Адрес получателя
+        $mail->addAddress('rezjume@ugratimber.ru', 'Recipient Name');  // Адрес получателя
 
         // Содержание письма
         $mail->isHTML(true);
