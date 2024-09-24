@@ -2622,7 +2622,7 @@ a:hover {
 
 
     .H1 {
-        font-size: 20px;
+        font-size: 25px;
         padding-top: 20px;
     }
 
@@ -3187,6 +3187,18 @@ a:hover {
         text-align: center;
         font-size: 20px;
     }
+
+    .p_news {
+        font-size: 17px;
+
+    }
    
+    .h3_news {
+        font-size: 22px;
+    }
+
+    strong {
+        font-size: 17px;
+    }
 
 }
