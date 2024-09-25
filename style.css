@@ -3203,7 +3203,7 @@ color: #6e6e6e;
 
     .p_news {
         font-size: 17px;
-
+        margin-top: 30px;
     }
    
     .h3_news {
@@ -3212,6 +3212,10 @@ color: #6e6e6e;
 
     strong {
         font-size: 17px;
+    }
+
+    .img_news4 {
+        width: 100%;
     }
 
 }
