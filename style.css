@@ -2132,8 +2132,6 @@ h3 {
 }
 
 .p_news {
-    color: #000;
-    font-family: "Montserrat Alternates";
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -2380,6 +2378,10 @@ a:hover {
 .dateButton p {
 color: #6e6e6e;
 
+}
+
+.img_news4 {
+    width: 100%;
 }
 
 @media (max-width: 992px) {
