@@ -1949,10 +1949,10 @@ h3 {
 }
 
 .custom-card img {
-    width: 373px;
-    height: 370px;
+    width: auto;
     height: 100%;
     object-fit: cover;
+    max-width: 500px;
 }
 
 .custom-card-content {
@@ -1962,7 +1962,7 @@ h3 {
 }
 
 .custom-card-title {
-    font-size: 1.5rem;
+    font-size: 22px;
     font-family: MontserratBold;
     margin-top: 0;
 }
@@ -1970,7 +1970,7 @@ h3 {
 .custom-card-text {
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 
 .custom-card-footer {
@@ -1991,11 +1991,6 @@ h3 {
 
 .custom-card-footer a:hover {
     color: var(--yellow);
-}
-
-.row-card {
-    display: flex;
-    justify-content: space-between;
 }
 
 .small-card {
@@ -2026,7 +2021,7 @@ h3 {
 }
 
 .small-card-title {
-    font-size: 15px;
+    font-size: 14px;
     font-family: MontserratSemiBold;
     margin-top: 0;
 }
@@ -2680,6 +2675,7 @@ color: #6e6e6e;
     .custom-card img {
         width: 100%;
         height: auto;
+        
     }
 
     .small-card {
