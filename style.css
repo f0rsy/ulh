@@ -638,6 +638,8 @@ svg path {
 
 .footer {
     height: 355px;
+    position: relative;
+    bottom: 0px;
     /* Указываем фиксированную высоту */
 }
 
@@ -1654,19 +1656,6 @@ h3 {
     color: var(--yellow);
     stroke: var(--yellow);
     fill: var(--yellow);
-}
-
-
-.footer {
-    height: 355px;
-}
-
-.footer img {
-    margin-bottom: 15px;
-}
-
-.footer p {
-    margin-bottom: 5px;
 }
 
 .adress {
